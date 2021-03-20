@@ -1,0 +1,124 @@
+/*顶部区域*/
+.top{
+    height:115px;
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.top_in{
+    width: 1200px;
+    height: 100%;
+    background: url("../images/bn.jpg");
+    margin: 0 auto;
+}
+.top .top_right{
+    float: right;
+    height: 100%;
+    width: 380px;
+}
+.top .top_nav{
+    float: left;
+    height: 100%;
+    width: 550px;
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li>a{
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+    line-height: 60px;
+    margin-left:20px;
+}
+.top .top_nav>li>a:hover{
+    color: #e82c07;
+}
+/*药材区域*/
+.content{
+    height:950px;
+    width:1200px;
+    background: url("../images/background.jpg");
+    margin: 0 auto;
+}
+.content .content_index{
+    float:left;
+    height: 100%;
+    width: 250px;
+    background: url("../images/background.jpg")
+}
+.content .content_Limages{
+    float:left;
+    margin-left: 10px;
+    width: 450px;
+    height: 50px;
+    background-color: inherit;
+}
+.content .btt>li{
+    float: left;
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+.content .btt>li:hover{
+    border: 1px solid black;
+}
+.content .content_images{
+    float: right;
+    height: 100%;
+    width: 900px;
+    background: url("../images/background.jpg");
+    overflow: hidden;
+}
+.content .content_materials{
+    width: 900px;
+    height: 900px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.content .content_materials>li{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-right: 10px;
+    background-color: inherit;
+}
+.content .content_materials>li>img{
+    width: 100%;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+.content .content_materials>li>a>img{
+    width: 160px;
+    height:160px;
+    transition: all 0.5s;
+}
+.content .content_materials>li>p{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: 2px;
+}
+.content .content_materials>li:hover img{
+    transform: scale(1.2, 1.2);
+}
+/*底部区域*/
+.footer{
+    height:60px;
+    width: 1200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+.footer>h3{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}

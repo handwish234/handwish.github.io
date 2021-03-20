@@ -1,0 +1,49 @@
+/*顶部区域*/
+.top{
+    height:115px;
+    width: 100%;
+    background: url("../images/bn.jpg");
+}
+.top .top_right{
+    float: right;
+    height: 100%;
+    width: 380px;
+    /*background-color: pink;*/
+}
+.top .top_nav{
+    float: left;
+    height: 100%;
+    width: 550px;
+    /*background-color:antiquewhite ;*/
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li>a{
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+    line-height: 60px;
+    margin-left:40px;
+}
+.top .top_nav>li>a:hover{
+    color: #e82c07;
+}
+/*轮播区域*/
+.banner{
+    height:300px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+/*药材区域*/
+.content{
+    height:2000px;
+    width:100%;
+    background-color: antiquewhite;
+}
+/*底部区域*/
+.footer{
+    height:200px;
+    width: 100%;
+    background-color: #666666;
+}

@@ -1,0 +1,117 @@
+/*顶部区域*/
+.top{
+    height:115px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top_in{
+    width: 1200px;
+    height: 100%;
+    background: url("../images/bn.jpg");
+    margin: 0 auto;
+}
+.top .top_right{
+    float: right;
+    height: 100%;
+    width: 380px;
+}
+.top .top_nav{
+    float: left;
+    height: 100%;
+    width: 550px;
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li>a{
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+    line-height: 60px;
+    margin-left:20px;
+}
+.top .top_nav>li>a:hover{
+    color: #e82c07;
+}
+.content{
+    height:950px;
+    width:1200px;
+    background: url("../images/background.jpg");
+    margin: 0 auto;
+}
+.content .content_index{
+    float:left;
+    height: 100%;
+    width: 250px;
+}
+.content .content_images{
+    float: right;
+    height: 100%;
+    width: 900px;
+    background: url("../images/background.jpg");
+    overflow: hidden;
+}
+.content .content_materials{
+    width: 898px;
+    height: 1000px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.content .content_materials>li{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin-right: 7px;
+    background-color: inherit;
+}
+.content .content_materials>li>img{
+    width: 100%;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+.content .content_materials>li>p{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: 2px;
+}
+.content .content_materials>li:hover img{
+    transform: scale(1.2, 1.2);
+}
+.content .pagination{
+    display: table;
+    padding: 0;
+    margin: 40px auto;
+}
+.content .pagination>li{
+    display: table-cell;
+}
+.content .pagination>li>a{
+    color: black;
+    font-size: 16px;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.content .pagination>li>a:active{
+    background-color: #e8340e;
+    color: white;
+}
+.content .pagination>li>a:hover{
+    background-color: white;
+}
+/*底部区域*/
+.footer{
+    height:60px;
+    width: 1200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+.footer>h3{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}

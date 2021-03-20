@@ -1,0 +1,75 @@
+.content{
+    width: 1200px;
+    height: 600px;
+    background: url(../images/background3.jpg);
+    margin: 0 auto;
+}
+.content .content_top{
+    width: 370px;
+    height: 60px;
+    float: right;
+    background-color: inherit;
+    margin-top: 20px;
+}
+.content .content_top>a>h3{
+    font-size: 26px;
+    color: #333333;
+    font-weight: bold;
+    float: left;
+    letter-spacing: 5px;
+}
+.content .content_top>a>h3:hover{
+    color: #e82c07;
+}
+.content .content_middle{
+    width: 1200px;
+    height: 540px;
+    margin: 0 auto;
+    float: inherit;
+}
+.content .content_search{
+    width: 800px;
+    height: 200px;
+    float: left;
+    margin-left: 160px;
+    background-color: inherit;
+}
+.content .content_result{
+    width: 900px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: inherit;
+    float: right;
+    margin-right: 55px;
+}
+.content .content_result>li{
+    float: left;
+    list-style: none;
+    background-color: inherit;
+}
+.content .content_result>li>p{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.content .content_result>li>a>img{
+    width: 160px;
+    height: 160px;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+.content .content_result>li:hover img{
+    transform: scale(1.2, 1.2);
+}
+/*底部区域*/
+.footer{
+    height:30px;
+    width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+}
+.footer>h3{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
