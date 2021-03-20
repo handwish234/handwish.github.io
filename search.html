@@ -1,0 +1,2822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $(function(){
+        $('li').hide();
+    })
+    $(document).ready(function(){
+        $("button").click(function(){
+            var content=$("#choosetext").val();
+            $("#"+content).show();
+            return false;
+        });
+    });
+</script>
+<div class="content">
+    <div class="content_top">
+        <a href="index.html"><h3>首页</h3></a>
+    </div>
+    <div class="content_middle">
+        <div class="content_search">
+            <div id="lookuptxt"
+                 style="float:left;padding-left:5px;">
+                <input type="text"
+                       id="choosetext" style="margin-left: 80px; margin-top: 170px; height:40px; width:500px;
+                   border:1px solid black;background-color: inherit"class="form-control"/>
+            </div>
+            <button id="lookupbtn"
+                    style="float:left;margin-left: 20px; background-color: antiquewhite; width:100px;height:40px;color: black;font-size:16px;margin-top:170px;cursor:pointer;"onclick="Btnselect()">搜索
+            </button>
+        </div>
+        <div class="content_result">
+            <li id="甘草">
+                <a href="pages/page_草部/page1/甘草.html"><img  src="images/1.jpg" title="甘草" id="C1" alt="甘草"></a>
+                <p>甘草</p>
+            </li>
+            <li id="黄芪">
+                <a href="pages/page_草部/page1/黄芪.html"><img src="images/2.jpg" title="黄芪" id="C2" alt="黄芪"></a>
+                <p>黄芪</p>
+            </li>
+            <li id="人参">
+                <a href="pages/page_草部/page1/人参.html"><img src="images/3.jpg" title="人参" id="C3" alt="人参"></a>
+                <p>人参</p>
+            </li>
+            <li id="沙参">
+                <a href="pages/page_草部/page1/沙参.html"><img src="images/4.jpg" title="沙参" id="C4" alt="沙参"></a>
+                <p>沙参</p>
+            </li>
+            <li id="荠苠">
+                <a href="pages/page_草部/page1/荠苠.html"><img src="images/5.jpg" title="荠苠" id="C5" alt="荠苠"></a>
+                <p>荠苠</p>
+            </li>
+            <li id="桔梗">
+                <a href="pages/page_草部/page1/桔梗.html"><img src="images/6.jpg" title="桔梗" id="C6" alt="桔梗"></a>
+                <p>桔梗</p>
+            </li>
+            <li id="黄精">
+                <a href="pages/page_草部/page1/黄精.html"><img src="images/8.jpg" title="黄精" id="C7" alt="黄精"></a>
+                <p>黄精</p>
+            </li>
+            <li id="萎蕤">
+                <a href="pages/page_草部/page1/萎蕤.html"><img src="images/9.png" title="萎蕤" id="C8" alt="萎蕤"></a>
+                <p>萎蕤</p>
+            </li>
+            <li id="知母">
+                <a href="pages/page_草部/page1/知母.html"><img src="images/10.jpg" title="知母" id="C9" alt="知母"></a>
+                <p>知母</p>
+            </li>
+            <li id="肉苁蓉">
+                <a href="pages/page_草部/page1/肉苁蓉.html"><img src="images/11.jpg" title="肉苁蓉" id="C10" alt="肉苁蓉"></a>
+                <p>肉苁蓉</p>
+            </li>
+            <li id="列当">
+                <a href="pages/page_草部/page1/列当.html"><img src="images/12.jpg" title="列当" id="C11" alt="列当"></a>
+                <p>列当</p>
+            </li>
+            <li id="赤箭">
+                <a href="pages/page_草部/page1/赤箭.html"><img src="images/13.jpg" title="赤箭" id="C12" alt="赤箭"></a>
+                <p>赤箭</p>
+            </li>
+            <li id="白术">
+                <a href="pages/page_草部/page1/白术.html"><img src="images/14.jpg" title="白术" id="C13" alt="白术"></a>
+                <p>白术</p>
+            </li>
+            <li id="苍术">
+                <a href="pages/page_草部/page1/苍术.html"><img src="images/15.jpg" title="苍术" id="C14" alt="苍术"></a>
+                <p>苍术</p>
+            </li>
+            <li id="狗脊">
+                <a href="pages/page_草部/page1/狗脊.html"><img src="images/16.jpg" title="狗脊" id="C15" alt="狗脊"></a>
+                <p>狗脊</p>
+            </li>
+            <li id="贯众">
+                <a href="pages/page_草部/page1/贯众.html"><img src="images/17.jpg" title="贯众" id="C16" alt="贯众"></a>
+                <p>贯众</p>
+            </li>
+            <li id="巴戟天">
+                <a href="pages/page_草部/page1/巴戟天.html"><img src="images/18.jpg" title="巴戟天" id="C17" alt="巴戟天"></a>
+                <p>巴戟天</p>
+            </li>
+            <li id="远志">
+                <a href="pages/page_草部/page1/远志.html"><img src="images/19.jpg" title="远志" id="C18" alt="远志"></a>
+                <p>远志</p>
+            </li>
+            <li id="淫羊霍">
+                <a href="pages/page_草部/page1/淫羊霍.html"><img src="images/20.jpg" title="淫羊霍" id="C19" alt="淫羊霍"></a>
+                <p>淫羊霍</p>
+            </li>
+            <li id="仙茅">
+                <a href="pages/page_草部/page1/仙茅.html"><img src="images/21.jpg" title="仙茅" id="C20" alt="仙茅"></a>
+                <p>仙茅</p>
+            </li>
+            <li id="玄参">
+                <a href="pages/page_草部/page2/玄参.html"><img src="images/22.jpg" title="玄参" id="C21" alt="玄参"></a>
+                <p>玄参</p>
+            </li>
+            <li id="地榆">
+                <a href="pages/page_草部/page2/地榆.html"><img src="images/23.jpg" title="地榆" id="C22" alt="地榆"></a>
+                <p>地榆</p>
+            </li>
+            <li id="丹参">
+                <a href="pages/page_草部/page2/丹参.html"><img src="images/24.jpg" title="丹参" id="C23" alt="丹参"></a>
+                <p>丹参</p>
+            </li>
+            <li id="紫参">
+                <a href="pages/page_草部/page2/紫参.html"><img src="images/25.jpg" title="紫参" id="C24" alt="紫参"></a>
+                <p>紫参</p>
+            </li>
+            <li id="紫草">
+                <a href="pages/page_草部/page2/紫草.html"><img src="images/26.jpg" title="紫草" id="C25" alt="紫草"></a>
+                <p>紫草</p>
+            </li>
+            <li id="白头翁">
+                <a href="pages/page_草部/page2/白头翁.html"><img src="images/27.jpg" title="白头翁" id="C26" alt="白头翁"></a>
+                <p>白头翁</p>
+            </li>
+            <li id="白及">
+                <a href="pages/page_草部/page2/白及.html"><img src="images/28.jpg" title="白及" id="C27" alt="白及"></a>
+                <p>白及</p>
+            </li>
+            <li id="三七">
+                <a href="pages/page_草部/page2/三七.html"><img src="images/29.jpg" title="三七" id="C28" alt="三七"></a>
+                <p>三七</p>
+            </li>
+            <li id="黄连">
+                <a href="pages/page_草部/page2/黄连.html"><img src="images/30.jpg" title="黄连" id="C29" alt="黄连"></a>
+                <p>黄连</p>
+            </li>
+            <li id="胡黄连">
+                <a href="pages/page_草部/page2/胡黄连.html"><img src="images/31.jpg" title="胡黄连" id="C30" alt="胡黄连"></a>
+                <p>胡黄连</p>
+            </li>
+            <li id="黄芩">
+                <a href="pages/page_草部/page2/黄芩.html"><img src="images/32.jpg" title="黄芩" id="C31" alt="黄芩"></a>
+                <p>黄芩</p>
+            </li>
+            <li id="秦艽">
+                <a href="pages/page_草部/page2/秦艽.html"><img src="images/33.jpg" title="秦艽" id="C32" alt="秦艽"></a>
+                <p>秦艽</p>
+            </li>
+            <li id="茈胡">
+                <a href="pages/page_草部/page2/茈胡.html"><img src="images/34.jpg" title="茈胡" id="C33" alt="茈胡"></a>
+                <p>茈胡</p>
+            </li>
+            <li id="前胡">
+                <a href="pages/page_草部/page2/前胡.html"><img src="images/35.jpg" title="前胡" id="C34" alt="前胡"></a>
+                <p>前胡</p>
+            </li>
+            <li id="防风">
+                <a href="pages/page_草部/page2/防风.html"><img src="images/36.jpg" title="防风" id="C35" alt="防风"></a>
+                <p>防风</p>
+            </li>
+            <li id="独活">
+                <a href="pages/page_草部/page2/独活.html"><img src="images/37.jpg" title="独活" id="C36" alt="独活"></a>
+                <p>独活</p>
+            </li>
+            <li id="升麻">
+                <a href="pages/page_草部/page2/升麻.html"><img src="images/38.jpg" title="升麻" id="C37" alt="升麻"></a>
+                <p>升麻</p>
+            </li>
+            <li id="苦参">
+                <a href="pages/page_草部/page2/苦参.html"><img src="images/39.jpg" title="苦参" id="C38" alt="苦参"></a>
+                <p>苦参</p>
+            </li>
+            <li id="白鲜">
+                <a href="pages/page_草部/page2/白鲜.html"><img src="images/40.jpg" title="白鲜" id="C39" alt="白鲜"></a>
+                <p>白鲜</p>
+            </li>
+            <li id="延胡索">
+                <a href="pages/page_草部/page2/延胡索.html"><img src="images/41.jpg" title="延胡索" id="C40" alt="延胡索"></a>
+                <p>延胡索</p>
+            </li>
+            <li id="贝母">
+                <a href="pages/page_草部/page3/贝母.html"><img src="images/42.jpg" title="贝母" id="C41" alt="贝母"></a>
+                <p>贝母</p>
+            </li>
+            <li id="山慈菇">
+                <a href="pages/page_草部/page3/山慈菇.html"><img src="images/43.jpg" title="山慈菇" id="C42" alt="山慈菇"></a>
+                <p>山慈菇</p>
+            </li>
+            <li id="石蒜">
+                <a href="pages/page_草部/page3/石蒜.html"><img src="images/44.jpg" title="石蒜" id="C43" alt="石蒜"></a>
+                <p>石蒜</p>
+            </li>
+            <li id="白茅">
+                <a href="pages/page_草部/page3/白茅.html"><img src="images/45.jpg" title="白茅" id="C44" alt="白茅"></a>
+                <p>白茅</p>
+            </li>
+            <li id="龙胆">
+                <a href="pages/page_草部/page3/龙胆.html"><img src="images/46.jpg" title="龙胆" id="C45" alt="龙胆"></a>
+                <p>龙胆</p>
+            </li>
+            <li id="细辛">
+                <a href="pages/page_草部/page3/细辛.html"><img src="images/47.jpg" title="细辛" id="C46" alt="细辛"></a>
+                <p>细辛</p>
+            </li>
+            <li id="及己">
+                <a href="pages/page_草部/page3/及己.html"><img src="images/48.jpg" title="及己" id="C47" alt="及己"></a>
+                <p>及己</p>
+            </li>
+            <li id="徐长卿">
+                <a href="pages/page_草部/page3/徐长卿.html"><img src="images/49.jpg" title="徐长卿" id="C48" alt="徐长卿"></a>
+                <p>徐长卿</p>
+            </li>
+            <li id="白薇">
+                <a href="pages/page_草部/page3/白薇.html"><img src="images/50.jpg" title="白薇" id="C49" alt="白薇"></a>
+                <p>白薇</p>
+            </li>
+            <li id="白前">
+                <a href="pages/page_草部/page3/白前.html"><img src="images/51.jpg" title="白前" id="C50" alt="白前"></a>
+                <p>白前</p>
+            </li>
+            <li id="锦地罗">
+                <a href="pages/page_草部/page3/锦地罗.html"><img src="images/52.jpg" title="锦地罗" id="C51" alt="锦地罗"></a>
+                <p>锦地罗</p>
+            </li>
+            <li id="檀香">
+                <a href="pages/page_草部/page3/檀香.html"><img src="images/53.jpg" title="檀香" id="C52" alt="檀香"></a>
+                <p>檀香</p>
+            </li>
+            <li id="锁阳">
+                <a href="pages/page_草部/page3/锁阳.html"><img src="images/54.jpg" title="锁阳" id="C53" alt="锁阳"></a>
+                <p>锁阳</p>
+            </li>
+            <li id="铁线草">
+                <a href="pages/page_草部/page3/铁线草.html"><img src="images/55.jpg" title="铁线草" id="C54" alt="铁线草"></a>
+                <p>铁线草</p>
+            </li>
+            <li id="当归">
+                <a href="pages/page_草部/page3/当归.html"><img src="images/56.jpg" title="当归" id="C55" alt="当归"></a>
+                <p>当归</p>
+            </li>
+            <li id="芎穷">
+                <a href="pages/page_草部/page3/芎穷.html"><img src="images/57.jpg" title="芎穷" id="C56" alt="芎穷"></a>
+                <p>芎穷</p>
+            </li>
+            <li id="蘼芜">
+                <a href="pages/page_草部/page3/蘼芜.html"><img src="images/58.jpg" title="蘼芜" id="C57" alt="蘼芜"></a>
+                <p>蘼芜</p>
+            </li>
+            <li id="蛇床">
+                <a href="pages/page_草部/page3/蛇床.html"><img src="images/59.jpg" title="蛇床" id="C58" alt="蛇床"></a>
+                <p>蛇床</p>
+            </li>
+            <li id="藁本">
+                <a href="pages/page_草部/page3/藁本.html"><img src="images/60.jpg" title="藁本" id="C59" alt="藁本"></a>
+                <p>藁本</p>
+            </li>
+            <li id="白芷">
+                <a href="pages/page_草部/page3/白芷.html"><img src="images/61.jpg" title="白芷" id="C60" alt="白芷"></a>
+                <p>白芷</p>
+            </li>
+            <li id="芍药">
+                <a href="pages/page_草部/page4/芍药.html"><img src="images/62.jpg" title="芍药" id="C149" alt="芍药"></a>
+                <p>芍药</p>
+            </li>
+            <li id="牡丹">
+                <a href="pages/page_草部/page4/牡丹.html"><img src="images/63.jpg" title="牡丹" id="C150" alt="牡丹"></a>
+                <p>牡丹</p>
+            </li>
+            <li id="木香">
+                <a href="pages/page_草部/page4/木香.html"><img src="images/64.jpg" title="木香" id="C151" alt="木香"></a>
+                <p>木香</p>
+            </li>
+            <li id="甘松香">
+                <a href="pages/page_草部/page4/甘松香.html"><img src="images/65.jpg" title="甘松香" id="C152" alt="甘松香"></a>
+                <p>甘松香</p>
+            </li>
+            <li id="杜若">
+                <a href="pages/page_草部/page4/杜若.html"><img src="images/66.jpg" title="杜若" id="C153" alt="杜若"></a>
+                <p>杜若</p>
+            </li>
+            <li id="高良姜">
+                <a href="pages/page_草部/page4/高良姜.html"><img src="images/67.jpg" title="高良姜" id="C154" alt="高良姜"></a>
+                <p>高良姜</p>
+            </li>
+            <li id="郁金">
+                <a href="pages/page_草部/page4/郁金.html"><img src="images/68.jpg" title="郁金" id="C155" alt="郁金"></a>
+                <p>郁金</p>
+            </li>
+            <li id="姜黄">
+                <a href="pages/page_草部/page4/姜黄.html"><img src="images/69.jpg" title="姜黄" id="C156" alt="姜黄"></a>
+                <p>姜黄</p>
+            </li>
+            <li id="补骨脂">
+                <a href="pages/page_草部/page4/补骨脂.html"><img src="images/70.jpg" title="补骨脂" id="C157" alt="补骨脂"></a>
+                <p>补骨脂</p>
+            </li>
+            <li id="荜茏">
+                <a href="pages/page_草部/page4/荜茏.html"><img src="images/71.jpg" title="荜茏" id="C158" alt="荜茏"></a>
+                <p>荜茏</p>
+            </li>
+            <li id="益智子">
+                <a href="pages/page_草部/page5/益母草.html"><img src="images/72.jpg" title="益智子" id="C159" alt="益智子"></a>
+                <p>益智子</p>
+            </li>
+            <li id="缩砂密">
+                <a href="pages/page_草部/page4/缩砂密.html"><img src="images/73.jpg" title="缩砂密" id="C160" alt="缩砂密"></a>
+                <p>缩砂密</p>
+            </li>
+            <li id="白豆蔻">
+                <a href="pages/page_草部/page4/白豆蔻.html"><img src="images/74.jpg" title="白豆蔻" id="C161" alt="白豆蔻"></a>
+                <p>白豆蔻</p>
+            </li>
+            <li id="豆蔻">
+                <a href="pages/page_草部/page4/豆蔻.html"><img src="images/75.jpg" title="豆蔻" id="C162" alt="豆蔻"></a>
+                <p>豆蔻</p>
+            </li>
+            <li id="蓬莪茂">
+                <a href="pages/page_草部/page4/蓬莪茂.html"><img src="images/76.jpg" title="蓬莪茂" id="C163" alt="蓬莪茂"></a>
+                <p>蓬莪茂</p>
+            </li>
+            <li id="莎草香附子">
+                <a href="pages/page_草部/page4/沙草香附子.html"><img src="images/78.jpg" title="莎草香附子" id="C165" alt="莎草香附子"></a>
+                <p>莎草香附子</p>
+            </li>
+            <li id="藿香">
+                <a href="pages/page_草部/page4/藿香.html"><img src="images/79.jpg" title="藿香" id="C166" alt="藿香"></a>
+                <p>藿香</p>
+            </li>
+            <li id="熏草">
+                <a href="pages/page_草部/page4/熏草.html"><img src="images/80.jpg" title="熏草" id="C167" alt="熏草"></a>
+                <p>熏草</p>
+            </li>
+            <li id="兰草">
+                <a href="pages/page_草部/page4/兰草.html"><img src="images/81.jpg" title="兰草" id="C168" alt="兰草"></a>
+                <p>兰草</p>
+            </li>
+            <li id="淹闾">
+                <a href="pages/page_草部/page5/淹闾.html"><img src="images/caobu2/2-1覆闾.jpg" title="覆闾" id="C61" alt="覆闾"></a>
+                <p>淹闾</p>
+            </li>
+            <li id="艾草">
+                <a href="pages/page_草部/page5/艾.html"><img src="images/caobu2/2-2艾草.jpg" title="艾草" height="160px" id="C62" alt="艾草"></a>
+                <p>艾草</p>
+            </li>
+            <li id="茵陈蒿">
+                <a href="pages/page_草部/page5/茵陈蒿.html"><img src="images/caobu2/2-3茵陈蒿.jpg" title="茵陈蒿" id="C63" alt="茵陈蒿"></a>
+                <p>茵陈蒿</p>
+            </li>
+            <li id="青蒿">
+                <a href="pages/page_草部/page5/青蒿.html"><img src="images/caobu2/2-4青蒿.jpg" title="青蒿" id="C64" alt="青蒿"></a>
+                <p>青蒿</p>
+            </li>
+            <li id="白蒿">
+                <a href="pages/page_草部/page5/白蒿.html"><img src="images/caobu2/2-5白蒿.jpg" title="白蒿" id="C65" alt="白蒿"></a>
+                <p>白蒿</p>
+            </li>
+            <li id="益母草">
+                <a href="pages/page_草部/page5/益母草.html"><img src="images/caobu2/2-6益母草.jpg" title="益母草" id="C66" alt="益母草"></a>
+                <p>益母草</p>
+            </li>
+            <li id="夏枯草">
+                <a href="pages/page_草部/page5/夏枯草.html"><img src="images/caobu2/2-7夏枯草.jpg" title="夏枯草" id="C67" alt="夏枯草"></a>
+                <p>夏枯草</p>
+            </li>
+            <li id="刘寄奴草">
+                <a href="pages/page_草部/page5/刘寄奴草.html"><img src="images/caobu2/2-8刘寄奴草.jpg" title="刘寄奴草" id="C68" alt="刘寄奴草"></a>
+                <p>刘寄奴草</p>
+            </li>
+            <li id="旋夏花">
+                <a href="pages/page_草部/page5/旋夏花.html"><img src="images/caobu2/2-9旋夏花.jpg" title="旋夏花" id="C69" alt="旋夏花"></a>
+                <p>旋夏花</p>
+            </li>
+            <li id="青葙">
+                <a href="pages/page_草部/page5/青葙.html"><img src="images/caobu2/2-10青葙.jpg" title="青葙" id="C70" alt="青葙"></a>
+                <p>青葙</p>
+            </li>
+            <li id="鸡冠">
+                <a href="pages/page_草部/page5/鸡冠.html"><img src="images/caobu2/2-11鸡冠.jpg" title="鸡冠" id="C71" alt="鸡冠"></a>
+                <p>鸡冠</p>
+            </li>
+            <li id="红蓝花">
+                <a href="pages/page_草部/page5/红蓝花.html"><img src="images/caobu2/2-12红蓝花.jpg" title="红蓝花" id="C72" alt="红蓝花"></a>
+                <p>红蓝花</p>
+            </li>
+            <li id="番红花">
+                <a href="pages/page_草部/page5/番红花.html"><img src="images/caobu2/2-13番红花.jpg" title="番红花" id="C73 " alt="番红花"></a>
+                <p>番红花</p>
+            </li>
+            <li id="燕脂">
+                <a href="pages/page_草部/page6/燕脂.html"><img src="images/caobu2/2-14燕脂.png" title="燕脂" id="C74" alt="燕脂"></a>
+                <p>燕脂</p>
+            </li>
+            <li id="大蓟、小蓟">
+                <a href="pages/page_草部/page6/大蓟.html"><img src="images/caobu2/2-15大蓟、小蓟.jpg" title="大蓟、小蓟" id="C75" alt="大蓟、小蓟"></a>
+                <p>大蓟、小蓟</p>
+            </li>
+            <li id="续断">
+                <a href="pages/page_草部/page6/续断.html"><img src="images/caobu2/2-16续断.jpg" title="续断" id="C76" alt="续断"></a>
+                <p>续断</p>
+            </li>
+            <li id="漏卢">
+                <a href="pages/page_草部/page6/漏卢.html"><img src="images/caobu2/2-17漏卢.jpg" title="漏卢" id="C77" alt="漏卢"></a>
+                <p>漏卢</p>
+            </li>
+            <li id="苎麻">
+                <a href="pages/page_草部/page6/苎麻.html"><img src="images/caobu2/2-18苎麻.jpg" title="苎麻" id="C78" alt="苎麻"></a>
+                <p>苎麻</p>
+            </li>
+            <li id="苘麻">
+                <a href="pages/page_草部/page6/苘麻.html"><img src="images/caobu2/2-19苘麻.jpg" title="苘麻" id="C79" alt="苘麻"></a>
+                <p>苘麻</p>
+            </li>
+            <li id="大青">
+                <a href="pages/page_草部/page6/大青.html"><img src="images/caobu2/2-20大青.jpg" title="大青" id="C80" alt="大青"></a>
+                <p>大青</p>
+            </li>
+            <li id="小青">
+                <a href="pages/page_草部/page6/小青.html"><img src="images/caobu2/2-21小青.jpg" title="小青" id="C81" alt="小青"></a>
+                <p>小青</p>
+            </li>
+            <li id="葫芦巴">
+                <a href="pages/page_草部/page6/葫芦巴.html"><img src="images/caobu2/2-22胡芦巴.jpg" title="胡芦巴" id="C82" alt="胡芦巴"></a>
+                <p>葫芦巴</p>
+            </li>
+            <li id="蠡实">
+                <a href="pages/page_草部/page6/蠡实.html"><img src="images/caobu2/2-23蠡实.jpg" title="蠡实" id="C83" alt="蠡实"></a>
+                <p>蠡实</p>
+            </li>
+            <li id="恶实">
+                <a href="pages/page_草部/page6/恶实.html"><img src="images/caobu2/2-24恶实.jpg" title="恶实" id="C84" alt="恶实"></a>
+                <p>恶实</p>
+            </li>
+            <li id="呆耳">
+                <a href="pages/page_草部/page6/呆耳.html"><img src="images/caobu2/2-25呆耳.jpg" title="呆耳" id="C85" alt="呆耳"></a>
+                <p>呆耳</p>
+            </li>
+            <li id="无名精">
+                <a href="pages/page_草部/page6/无名精.html"><img src="images/caobu2/2-26无名精.jpg" title="无名精" id="C86" alt="无名精"></a>
+                <p>无名精</p>
+            </li>
+            <li id="希莶">
+                <a href="pages/page_草部/page6/希莶.html"><img src="images/caobu2/2-27希莶.jpg" title="希莶" id="C87" alt="希莶"></a>
+                <p>希莶</p>
+            </li>
+            <li id="箬">
+                <a href="pages/page_草部/page6/箬.html"><img src="images/caobu2/2-28箬.jpg" title="箬" id="C88" alt="箬"></a>
+                <p>箬</p>
+            </li>
+            <li id="芦">
+                <a href="pages/page_草部/page6/芦.html"><img src="images/caobu2/2-29芦.jpg" title="芦" id="C89" alt="芦"></a>
+                <p>芦</p>
+            </li>
+            <li id="甘蕉">
+                <a href="pages/page_草部/page6/甘蕉.html"><img src="images/caobu2/2-30甘蕉.jpg" title="甘蕉" id="C90" alt="甘蕉"></a>
+                <p>甘蕉</p>
+            </li>
+            <li id="蓑荷">
+                <a href="pages/page_草部/page6/蓑荷.html"><img src="images/caobu2/2-31衰荷.jpg" title="衰荷" id="C91" alt="衰荷"></a>
+                <p>蓑荷</p>
+            </li>
+            <li id="灯心草">
+                <a href="pages/page_草部/page6/灯心草.html"><img src="images/caobu2/2-32灯心草.jpg" title="灯心草" id="C92" alt="灯心草"></a>
+                <p>灯心草</p>
+            </li>
+            <li id="木贼">
+                <a href="pages/page_草部/page6/木贼.html"><img src="images/caobu2/2-33木贼.jpg" title="木贼" id="C93" alt="木贼"></a>
+                <p>木贼</p>
+            </li>
+            <li id="麻黄">
+                <a href="pages/page_草部/page7/麻黄.html"><img src="images/caobu2/2-34麻黄.jpg" title="麻黄" id="C94" alt="麻黄"></a>
+                <p>麻黄</p>
+            </li>
+            <li id="地黄">
+                <a href="pages/page_草部/page7/地黄.html"><img src="images/caobu2/2-35地黄.jpg" title="地黄" id="C95" alt="地黄"></a>
+                <p>地黄</p>
+            </li>
+            <li id="牛膝">
+                <a href="pages/page_草部/page7/牛膝.html"><img src="images/caobu2/2-36牛膝.jpg" title="牛膝" id="C96" alt="牛膝"></a>
+                <p>牛膝</p>
+            </li>
+            <li id="紫菀">
+                <a href="pages/page_草部/page7/紫菀.html"><img src="images/caobu2/2-37紫菀.jpg" title="紫菀" id="C97" alt="紫菀"></a>
+                <p>紫菀</p>
+            </li>
+            <li id="麦门冬">
+                <a href="pages/page_草部/page7/麦门冬.html"><img src="images/caobu2/2-38麦门冬.jpg" title="麦门冬" id="C98" alt="麦门冬"></a>
+                <p>麦门冬</p>
+            </li>
+            <li id="萱草">
+                <a href="pages/page_草部/page7/萱草.html"><img src="images/caobu2/2-39萱草.jpg" title="萱草" id="C99" alt="萱草"></a>
+                <p>萱草</p>
+            </li>
+            <li id="淡竹叶">
+                <a href="pages/page_草部/page7/淡竹叶.html"><img src="images/caobu2/2-40淡竹叶.jpg" title="淡竹叶" id="C100" alt="淡竹叶"></a>
+                <p>淡竹叶</p>
+            </li>
+            <li id="鸭跖草">
+                <a href="pages/page_草部/page7/鸭跖草.html"><img src="images/caobu2/2-41鸭跖草.jpg" title="鸭跖草" id="C101" alt="鸭跖草"></a>
+                <p>鸭跖草</p>
+            </li>
+            <li id="葵">
+                <a href="pages/page_草部/page7/葵.html"><img src="images/caobu2/2-42葵.jpg" title="葵" id="C102" alt="葵"></a>
+                <p>葵</p>
+            </li>
+            <li id="蜀葵">
+                <a href="pages/page_草部/page7/蜀葵.html"><img src="images/caobu2/2-43蜀葵.jpg" title="蜀葵" id="C103" alt="蜀葵"></a>
+                <p>蜀葵</p>
+            </li>
+            <li id="龙葵">
+                <a href="pages/page_草部/page7/龙葵.html"><img src="images/caobu2/2-44龙葵.jpg" title="龙葵" id="C104" alt="龙葵"></a>
+                <p>龙葵</p>
+            </li>
+            <li id="酸浆">
+                <a href="pages/page_草部/page7/酸浆.html"><img src="images/caobu2/2-45酸浆.jpg" title="酸浆" id="C105" alt="酸浆"></a>
+                <p>酸浆</p>
+            </li>
+            <li id="蜀羊泉">
+                <a href="pages/page_草部/page7/蜀羊泉.html"><img src="images/caobu2/2-46蜀羊泉.jpg" title="蜀羊泉" id="C106" alt="蜀羊泉"></a>
+                <p>蜀羊泉</p>
+            </li>
+            <li id="败酱">
+                <a href="pages/page_草部/page7/败酱.html"><img src="images/caobu2/2-47败酱.jpg" title="败酱" id="C107" alt="败酱"></a>
+                <p>败酱</p>
+            </li>
+            <li id="冬花">
+                <a href="pages/page_草部/page7/款冬花.html"><img src="images/caobu2/2-48款冬花.jpg" title="冬花" id="C108" alt="冬花"></a>
+                <p>冬花</p>
+            </li>
+            <li id="鼠曲草">
+                <a href="pages/page_草部/page7/鼠曲草.html"><img src="images/caobu2/2-49鼠曲草.jpg" title="鼠曲草" id="C109" alt="鼠曲草"></a>
+                <p>鼠曲草</p>
+            </li>
+            <li id="决明">
+                <a href="pages/page_草部/page7/决明.html"><img src="images/caobu2/2-50决明.jpg" title="决明" id="C110" alt="决明"></a>
+                <p>决明</p>
+            </li>
+            <li id="地肤">
+                <a href="pages/page_草部/page7/地肤.html"><img src="images/caobu2/2-51地肤.jpg" title="地肤" id="C111" alt="地肤"></a>
+                <p>地肤</p>
+            </li>
+            <li id="瞿麦">
+                <a href="pages/page_草部/page7/瞿麦.html"><img src="images/caobu2/2-52瞿麦.jpg" title="瞿麦" id="C112" alt="瞿麦"></a>
+                <p>瞿麦</p>
+            </li>
+            <li id="王不留行">
+                <a href="pages/page_草部/page7/王不留行.html"><img src="images/caobu2/2-53王不留行.jpg" title="王不留行" id="C113" alt="王不留行"></a>
+                <p>王不留行</p>
+            </li>
+            <li id="葶苈子">
+                <a href="pages/page_草部/page7/葶苈.html"><img src="images/caobu2/2-54葶苈子.jpg" title="葶苈子" id="C114" alt="葶苈子"></a>
+                <p>葶苈子</p>
+            </li>
+            <li id="车前">
+                <a href="pages/page_草部/page8/车前.html"><img src="images/caobu2/2-55车前.jpg" title="车前" id="C115" alt="车前"></a>
+                <p>车前</p>
+            </li>
+            <li id="马鞭草">
+                <a href="pages/page_草部/page8/马鞭草.html"><img src="images/caobu2/2-56马鞭草.jpg" title="马鞭草" id="C116" alt="马鞭草"></a>
+                <p>马鞭草</p>
+            </li>
+            <li id="蛇含">
+                <a href="pages/page_草部/page8/蛇含.html"><img src="images/caobu2/2-57蛇含.jpg" title="蛇含" id="C117" alt="蛇含"></a>
+                <p>蛇含</p>
+            </li>
+            <li id="鳢肠">
+                <a href="pages/page_草部/page8/鳢肠.html"><img src="images/caobu2/2-58鳢肠.jpg" title="鳢肠" id="C118" alt="鳢肠"></a>
+                <p>鳢肠</p>
+            </li>
+            <li id="连翘">
+                <a href="pages/page_草部/page8/连翘.html"><img src="images/caobu2/2-59连翘.jpg" title="连翘" id="C119" alt="连翘"></a>
+                <p>连翘</p>
+            </li>
+            <li id="蒴翟">
+                <a href="pages/page_草部/page8/蒴翟.html"><img src="images/caobu2/2-60蒴翟.jpg" title="蒴翟" id="C120" alt="蒴翟"></a>
+                <p>蒴翟</p>
+            </li>
+            <li id="蓝">
+                <a href="pages/page_草部/page8/蓝.html"><img src="images/caobu2/2-61蓝.jpg" title="蓝" id="C121" alt="蓝"></a>
+                <p>蓝</p>
+            </li>
+            <li id="蓝淀">
+                <a href="pages/page_草部/page8/蓝淀.html"><img src="images/caobu2/2-62蓝淀.jpg" title="蓝淀" id="C122" alt="蓝淀"></a>
+                <p>蓝淀</p>
+            </li>
+            <li id="青黛">
+                <a href="pages/page_草部/page8/青黛.html"><img src="images/caobu2/2-63青黛.jpg" title="青黛" id="C123" alt="青黛"></a>
+                <p>青黛</p>
+            </li>
+            <li id="甘蓝">
+                <a href="pages/page_草部/page8/甘蓝.html"><img src="images/caobu2/2-64甘蓝.jpg" title="甘蓝" id="C124" alt="甘蓝"></a>
+                <p>甘蓝</p>
+            </li>
+            <li id="蓼">
+                <a href="pages/page_草部/page8/蓼.html"><img src="images/caobu2/2-65蓼.jpg" title="蓼" id="C125" alt="蓼"></a>
+                <p>蓼</p>
+            </li>
+            <li id="水蓼">
+                <a href="pages/page_草部/page8/水蓼.html"><img src="images/caobu2/2-66水蓼.jpg" title="水蓼" id="C126" alt="水蓼"></a>
+                <p>水蓼</p>
+            </li>
+            <li id="荭草">
+                <a href="pages/page_草部/page8/荭草.html"><img src="images/caobu2/2-67荭草.jpg" title="荭草" id="C127" alt="荭草"></a>
+                <p>荭草</p>
+            </li>
+            <li id="虎杖">
+                <a href="pages/page_草部/page8/虎杖.html"><img src="images/caobu2/2-68虎杖.jpg" title="虎杖" id="C128" alt="虎杖"></a>
+                <p>虎杖</p>
+            </li>
+            <li id="匾蓄">
+                <a href="pages/page_草部/page8/匾蓄.html"><img src="images/caobu2/2-69匾蓄.jpg" title="匾蓄" id="C129" alt="匾蓄"></a>
+                <p>匾蓄</p>
+            </li>
+            <li id="蒺藜">
+                <a href="pages/page_草部/page8/蒺藜.html"><img src="images/caobu2/2-70蒺藜.jpg" title="蒺藜" id="C130" alt="蒺藜"></a>
+                <p>蒺藜</p>
+            </li>
+            <li id="谷精草">
+                <a href="pages/page_草部/page8/谷精草.html"><img src="images/caobu2/2-71谷精草.jpg" title="谷精草" id="C131" alt="谷精草"></a>
+                <p>谷精草</p>
+            </li>
+            <li id="海金沙">
+                <a href="pages/page_草部/page8/海金沙.html"><img src="images/caobu2/2-72海金沙.jpg" title="海金沙" id="C132" alt="海金沙"></a>
+                <p>海金沙</p>
+            </li>
+            <li id="半边莲">
+                <a href="pages/page_草部/page8/半边莲.html"><img src="images/caobu2/2-73半边莲.jpg" title="半边莲" id="C133" alt="半边莲"></a>
+                <p>半边莲</p>
+            </li>
+            <li id="紫花地丁">
+                <a href="pages/page_草部/page9/紫花地丁.html"><img src="images/caobu2/2-74紫花地丁.jpg" title="紫花地丁" id="C134" alt="紫花地丁"></a>
+                <p>紫花地丁</p>
+            </li>
+            <li id="见肿消">
+                <a href="pages/page_草部/page9/见肿消.html"><img src="images/caobu2/2-75见肿消.jpg" title="见肿消" id="C135" alt="见肿消"></a>
+                <p>见肿消</p>
+            </li>
+            <li id="大黄">
+                <a href="pages/page_草部/page9/大黄.html"><img src="images/caobu2/2-76大黄.jpg" title="大黄" id="C136" alt="大黄"></a>
+                <p>大黄</p>
+            </li>
+            <li id="商陆">
+                <a href="pages/page_草部/page9/商陆.html"><img src="images/caobu2/2-77商陆.jpg" title="商陆" id="C137" alt="商陆"></a>
+                <p>商陆</p>
+            </li>
+            <li id="狼毒">
+                <a href="pages/page_草部/page9/狼毒.html"><img src="images/caobu2/2-78狼毒.jpg" title="狼毒" id="C138" alt="狼毒"></a>
+                <p>狼毒</p>
+            </li>
+            <li id="防葵">
+                <a href="pages/page_草部/page9/防葵.html"><img src="images/caobu2/2-79防葵.jpg" title="防葵" id="C139" alt="防葵"></a>
+                <p>防葵</p>
+            </li>
+            <li id="狼牙">
+                <a href="pages/page_草部/page9/狼牙.html"><img src="images/caobu2/2-80狼牙.jpg" title="狼牙" id="C140" alt="狼牙"></a>
+                <p>狼牙</p>
+            </li>
+            <li id="闾茹">
+                <a href="pages/page_草部/page9/闾茹.html"><img src="images/caobu2/2-81闾茹.jpg" title="闾茹" id="C141" alt="闾茹"></a>
+                <p>闾茹</p>
+            </li>
+            <li id="大戟">
+                <a href="pages/page_草部/page9/大戟.html"><img src="images/caobu2/2-82大戟.jpg" title="大戟" id="C142" alt="大戟"></a>
+                <p>大戟</p>
+            </li>
+            <li id="泽漆">
+                <a href="pages/page_草部/page9/泽漆.html"><img src="images/caobu2/2-83泽漆.jpg" title="泽漆" id="C143" alt="泽漆"></a>
+                <p>泽漆</p>
+            </li>
+            <li id="甘遂">
+                <a href="pages/page_草部/page9/甘遂.html"><img src="images/caobu2/2-84甘遂.jpg" title="甘遂" id="C144" alt="甘遂"></a>
+                <p>甘遂</p>
+            </li>
+            <li id="续随子">
+                <a href="pages/page_草部/page9/续随子.html"><img src="images/caobu2/2-85续随子.jpg" title="续随子" id="C145" alt="续随子"></a>
+                <p>续随子</p>
+            </li>
+            <li id="莨菪">
+                <a href="pages/page_草部/page9/莨菪.html"><img src="images/caobu2/2-86莨菪.jpg" title="莨菪" id="C146" alt="莨菪"></a>
+                <p>莨菪</p>
+            </li>
+            <li id="蓖麻">
+                <a href="pages/page_草部/page9/蓖麻.html"><img src="images/caobu2/2-87蓖麻.jpg" title="蓖麻" id="C147" alt="蓖麻"></a>
+                <p>蓖麻</p>
+            </li>
+            <li id="蜀漆">
+                <a href="pages/page_草部/page9/蜀漆.html"><img src="images/caobu2/2-88蜀漆.jpg" title="蜀漆" id="C148" alt="蜀漆"></a>
+                <p>蜀漆</p>
+            </li>
+            <li id="泽兰">
+                <a href="pages/page_草部/page4/泽兰.html"><img src="images/82.jpg" title="泽兰" id="C169" alt="泽兰"></a>
+                <p>泽兰</p>
+            </li>
+            <li id="马兰">
+                <a href="pages/page_草部/page5/马兰.html"><img src="images/83.jpg" title="马兰" id="C170" alt="马兰"></a>
+                <p>马兰</p>
+            </li>
+            <li id="香薷">
+                <a href="pages/page_草部/page5/香薷.html"><img src="images/84.jpg" title="香薷" id="C171" alt="香薷"></a>
+                <p>香薷</p>
+            </li>
+            <li id="假苏">
+                <a href="pages/page_草部/page5/假苏.html"><img src="images/85.jpg" title="假苏" id="C172" alt="假苏"></a>
+                <p>假苏</p>
+            </li>
+            <li id="薄荷">
+                <a href="pages/page_草部/page5/薄荷.html"><img src="images/86.jpg" title="薄荷" id="C173" alt="薄荷"></a>
+                <p>薄荷</p>
+            </li>
+            <li id="水苏">
+                <a href="pages/page_草部/page5/水苏.html"><img src="images/87.jpg" title="水苏" id="C174" alt="水苏"></a>
+                <p>水苏</p>
+            </li>
+            <li id="菊">
+                <a href="pages/page_草部/page5/菊.html"><img src="images/88.jpg" title="菊" id="C175" alt="菊"></a>
+                <p>菊</p>
+            </li>
+            <li id="野菊">
+                <a href="pages/page_草部/page5/野菊.html"><img src="images/89.jpg" title="野菊" id="C176" alt="野菊"></a>
+                <p>野菊</p>
+            </li>
+            <li id="长松">
+                <a href="pages/page_草部/page5/长松.html"><img src="images/7.png" title="长松" id="C177" alt="长松"></a>
+                <p>长松</p>
+            </li>
+            <li id="附子">
+                <a href="pages/page_草部/page9/附子.html"><img src="images/草3/1.jpg" title="附子" id="C178" alt="附子"></a>
+                <p>附子</p>
+            </li>
+            <li id="天雄">
+                <a href="pages/page_草部/page9/天雄.html"><img src="images/草3/2.jpg" title="天雄" id="C179" alt="天雄"></a>
+                <p>天雄</p>
+            </li>
+            <li id="侧子">
+                <a href="pages/page_草部/page9/侧子.html"><img src="images/草3/3.jpg" title="侧子" id="C180" alt="侧子"></a>
+                <p>侧子</p>
+            </li>
+            <li id="漏篮子">
+                <a href="pages/page_草部/page9/漏篮子.html"><img src="images/草3/4.jpg" title="漏篮子" id="C181" alt="漏篮子"></a>
+                <p>漏篮子</p>
+            </li>
+            <li id="乌头">
+                <a href="pages/page_草部/page10/乌头.html"><img src="images/草3/5.jpg" title="乌头" id="C182" alt="乌头"></a>
+                <p>乌头</p>
+            </li>
+            <li id="白附子">
+                <a href="pages/page_草部/page10/白附子.html"><img src="images/草3/6.jpg" title="白附子" id="C183" alt="白附子"></a>
+                <p>白附子</p>
+            </li>
+            <li id="虎掌">
+                <a href="pages/page_草部/page10/虎掌.html"><img src="images/草3/7.jpg" title="虎掌" id="C184" alt="虎掌"></a>
+                <p>虎掌</p>
+            </li>
+            <li id="局箬">
+                <a href="pages/page_草部/page10/局箬.html"><img src="images/草3/8.jpg" title="局箬" id="C185" alt="局箬"></a>
+                <p>局箬</p>
+            </li>
+            <li id="半夏">
+                <a href="pages/page_草部/page10/半夏.html"><img src="images/草3/9.jpg" title="半夏" id="C186" alt="半夏"></a>
+                <p>半夏</p>
+            </li>
+            <li id="蚤休">
+                <a href="pages/page_草部/page10/蚤休.html"><img src="images/草3/10.jpg" title="蚤休" id="C187" alt="蚤休"></a>
+                <p>蚤休</p>
+            </li>
+            <li id="鬼臼">
+                <a href="pages/page_草部/page10/鬼臼.html"><img src="images/草3/11.jpg" title="鬼臼" id="C188" alt="鬼臼"></a>
+                <p>鬼臼</p>
+            </li>
+            <li id="射干">
+                <a href="pages/page_草部/page10/射干.html"><img src="images/草3/12.jpg" title="射干" id="C189" alt="射干"></a>
+                <p>射干</p>
+            </li>
+            <li id="玉簪">
+                <a href="pages/page_草部/page10/玉簪.html"><img src="images/草3/13.jpg" title="玉簪" id="C190" alt="玉簪"></a>
+                <p>玉簪</p>
+            </li>
+            <li id="凤仙">
+                <a href="pages/page_草部/page10/凤仙.html"><img src="images/草3/14.jpg" title="凤仙" id="C191" alt="凤仙"></a>
+                <p>凤仙</p>
+            </li>
+            <li id="坐拿草">
+                <a href="pages/page_草部/page10/坐拿草.html"><img src="images/草3/15.jpg" title="坐拿草" id="C192" alt="坐拿草"></a>
+                <p>坐拿草</p>
+            </li>
+            <li id="曼陀罗花">
+                <a href="pages/page_草部/page10/曼陀罗花.html"><img src="images/草3/16.jpg" title="曼陀罗花" id="C193" alt="曼陀罗花"></a>
+                <p>曼陀罗花</p>
+            </li>
+            <li id="羊踯躅">
+                <a href="pages/page_草部/page10/羊踯躅.html"><img src="images/草3/17.jpg" title="羊踯躅" id="C194" alt="羊踯躅"></a>
+                <p>羊踯躅</p>
+            </li>
+            <li id="芫花">
+                <a href="pages/page_草部/page10/芫花.html"><img src="images/草3/18.jpg" title="芫花" id="C195" alt="芫花"></a>
+                <p>芫花</p>
+            </li>
+            <li id="莽草">
+                <a href="pages/page_草部/page10/莽草.html"><img src="images/草3/19.jpg" title="莽草" id="C196" alt="莽草"></a>
+                <p>莽草</p>
+            </li>
+            <li id="茵芋">
+                <a href="pages/page_草部/page10/茵芋.html"><img src="images/草3/20.jpg" title="茵芋" id="C197" alt="茵芋"></a>
+                <p>茵芋</p>
+            </li>
+            <li id="石龙芮">
+                <a href="pages/page_草部/page10/石龙芮.html"><img src="images/草3/21.jpg" title="石龙芮" id="C198" alt="石龙芮"></a>
+                <p>石龙芮</p>
+            </li>
+            <li id="钩吻">
+                <a href="pages/page_草部/page10/钩吻.html"><img src="images/草3/22.jpg" title="钩吻" id="C199" alt="钩吻"></a>
+                <p>钩吻</p>
+            </li>
+            <li id="菟丝子">
+                <a href="pages/page_草部/page10/菟丝子.html"><img src="images/草3/23.jpg" title="菟丝子" id="C200" alt="菟丝子"></a>
+                <p>菟丝子</p>
+            </li>
+            <li id="覆盆子">
+                <a href="pages/page_草部/page10/覆盆子.html"><img src="images/草3/24.jpg" title="覆盆子" id="C201" alt="覆盆子"></a>
+                <p>覆盆子</p>
+            </li>
+            <li id="使君子">
+                <a href="pages/page_草部/page11/使君子.html"><img src="images/草3/25.jpg" title="使君子" id="C202" alt="使君子"></a>
+                <p>使君子</p>
+            </li>
+            <li id="木鳖子">
+                <a href="pages/page_草部/page11/木鳖子.html"><img src="images/草3/26.jpg" title="木鳖子" id="C203" alt="木鳖子"></a>
+                <p>木鳖子</p>
+            </li>
+            <li id="番木鳖">
+                <a href="pages/page_草部/page11/番木鳖.html"><img src="images/草3/27.jpg" title="番木鳖" id="C204" alt="番木鳖"></a>
+                <p>番木鳖</p>
+            </li>
+            <li id="马兜铃">
+                <a href="pages/page_草部/page11/马兜铃.html"><img src="images/草3/28.jpg" title="马兜铃" id="C205" alt="马兜铃"></a>
+                <p>马兜铃</p>
+            </li>
+            <li id="盍藤子">
+                <a href="pages/page_草部/page11/盍藤子.html"><img src="images/草3/29.png" title="盍藤子" id="C206" alt="盍藤子"></a>
+                <p>盍藤子</p>
+            </li>
+            <li id="预知子">
+                <a href="pages/page_草部/page11/预知子.html"><img src="images/草3/30.jpg" title="预知子" id="C207" alt="预知子"></a>
+                <p>预知子</p>
+            </li>
+            <li id="牵牛子">
+                <a href="pages/page_草部/page11/牵牛子.html"><img src="images/草3/31.jpg" title="牵牛子" id="C208" alt="牵牛子"></a>
+                <p>牵牛子</p>
+            </li>
+            <li id="旋花">
+                <a href="pages/page_草部/page11/旋花.html"><img src="images/草3/32.jpg" title="旋花" id="C209" alt="旋花"></a>
+                <p>旋花</p>
+            </li>
+            <li id="紫葳">
+                <a href="pages/page_草部/page11/紫葳.html"><img src="images/草3/33.jpg" title="紫葳" id="C210" alt="紫葳"></a>
+                <p>紫葳</p>
+            </li>
+            <li id="营实墙蘼">
+                <a href="pages/page_草部/page11/营实墙蘼.html"><img src="images/草3/34.jpg" title="营实墙蘼" id="C211" alt="营实墙蘼"></a>
+                <p>营实墙蘼</p>
+            </li>
+            <li id="月季花">
+                <a href="pages/page_草部/page11/月季花.html"><img src="images/草3/35.jpg" title="月季花" id="C212" alt="月季花"></a>
+                <p>月季花</p>
+            </li>
+            <li id="栝楼">
+                <a href="pages/page_草部/page11/栝楼.html"><img src="images/草3/36.jpg" title="栝楼" id="C213" alt="栝楼"></a>
+                <p>栝楼</p>
+            </li>
+            <li id="王瓜">
+                <a href="pages/page_草部/page11/王瓜.html"><img src="images/草3/37.jpg" title="王瓜" id="C214" alt="王瓜"></a>
+                <p>王瓜</p>
+            </li>
+            <li id="葛">
+                <a href="pages/page_草部/page11/葛.html"><img src="images/草3/38.jpg" title="葛" id="C215" alt="葛"></a>
+                <p>葛</p>
+            </li>
+            <li id="天门冬">
+                <a href="pages/page_草部/page11/天门冬.html"><img src="images/草3/39.jpg" title="天门冬" id="C216" alt="天门冬"></a>
+                <p>天门冬</p>
+            </li>
+            <li id="百部">
+                <a href="pages/page_草部/page11/百部.html"><img src="images/草3/40.jpg" title="百部" id="C217" alt="百部"></a>
+                <p>百部</p>
+            </li>
+            <li id="何首乌">
+                <a href="pages/page_草部/page11/何首乌.html"><img src="images/草3/41.jpg" title="何首乌" id="C218" alt="何首乌"></a>
+                <p>何首乌</p>
+            </li>
+            <li id="萆解">
+                <a href="pages/page_草部/page11/萆解.html"><img src="images/草3/42.jpg" title="萆解" id="C219" alt="萆解"></a>
+                <p>萆解</p>
+            </li>
+            <li id="菝葜">
+                <a href="pages/page_草部/page11/菝葜.html"><img src="images/草3/43.jpg" title="菝葜" id="C220" alt="菝葜"></a>
+                <p>菝葜</p>
+            </li>
+            <li id="土茯苓">
+                <a href="pages/page_草部/page11/土茯苓.html"><img src="images/草3/44.jpg" title="土茯苓" id="C221" alt="土茯苓"></a>
+                <p>土茯苓</p>
+            </li>
+            <li id="白蔹">
+                <a href="pages/page_草部/page11/白蔹.html"><img src="images/草3/45.jpg" title="白蔹" id="C222" alt="白蔹"></a>
+                <p>白蔹</p>
+            </li>
+            <li id="山豆根">
+                <a href="pages/page_草部/page12/山豆根.html"><img src="images/草3/46.jpg" title="山豆根" id="C223" alt="山豆根"></a>
+                <p>山豆根</p>
+            </li>
+            <li id="黄药子">
+                <a href="pages/page_草部/page12/黄药子.html"><img src="images/草3/47.jpg" title="黄药子" id="C224" alt="黄药子"></a>
+                <p>黄药子</p>
+            </li>
+            <li id="白药子">
+                <a href="pages/page_草部/page12/白药子.html"><img src="images/草3/48.jpg" title="白药子" id="C225" alt="白药子"></a>
+                <p>白药子</p>
+            </li>
+            <li id="威灵仙">
+                <a href="pages/page_草部/page12/威灵仙.html"><img src="images/草3/49.jpg" title="威灵仙" id="C226" alt="威灵仙"></a>
+                <p>威灵仙</p>
+            </li>
+            <li id="茜草">
+                <a href="pages/page_草部/page12/茜草.html"><img src="images/草3/50.jpg" title="茜草" id="C227" alt="茜草"></a>
+                <p>茜草</p>
+            </li>
+            <li id="防己">
+                <a href="pages/page_草部/page12/防己.html"><img src="images/草3/51.jpg" title="防己" id="C228" alt="防己"></a>
+                <p>防己</p>
+            </li>
+            <li id="通草">
+                <a href="pages/page_草部/page12/通草.html"><img src="images/草3/52.jpg" title="通草" id="C229" alt="通草"></a>
+                <p>通草</p>
+            </li>
+            <li id="通脱木">
+                <a href="pages/page_草部/page12/通脱木.html"><img src="images/草3/53.jpg" title="通脱木" id="C230" alt="通脱木"></a>
+                <p>通脱木</p>
+            </li>
+            <li id="钩藤">
+                <a href="pages/page_草部/page12/钩藤.html"><img src="images/草3/54.jpg" title="钩藤" id="C231" alt="钩藤"></a>
+                <p>钩藤</p>
+            </li>
+            <li id="白英">
+                <a href="pages/page_草部/page12/白英.html"><img src="images/草3/55.jpg" title="白英" id="C232" alt="白英"></a>
+                <p>白英</p>
+            </li>
+            <li id="乌蔹莓">
+                <a href="pages/page_草部/page12/乌蔹莓.html"><img src="images/草3/56.jpg" title="乌蔹莓" id="C233" alt="乌蔹莓"></a>
+                <p>乌蔹莓</p>
+            </li>
+            <li id="律草">
+                <a href="pages/page_草部/page12/律草.html"><img src="images/草3/57.jpg" title="律草" id="C234" alt="律草"></a>
+                <p>律草</p>
+            </li>
+            <li id="络石">
+                <a href="pages/page_草部/page12/络石.html"><img src="images/草3/58.jpg" title="络石" id="C235" alt="络石"></a>
+                <p>络石</p>
+            </li>
+            <li id="木莲">
+                <a href="pages/page_草部/page12/木莲.html"><img src="images/草3/59.jpg" title="木莲" id="C236" alt="木莲"></a>
+                <p>木莲</p>
+            </li>
+            <li id="忍冬">
+                <a href="pages/page_草部/page12/忍冬.html"><img src="images/草3/60.jpg" title="忍冬" id="C237" alt="忍冬"></a>
+                <p>忍冬</p>
+            </li>
+            <li id="甘藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/61.jpg" title="甘藤" id="C238" alt="甘藤"></a>
+                <p>甘藤</p>
+            </li>
+            <li id="含水藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/62.jpg" title="含水藤" id="C239" alt="含水藤"></a>
+                <p>含水藤</p>
+            </li>
+            <li id="天仙藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/63.jpg" title="天仙藤" id="C240" alt="天仙藤"></a>
+                <p>天仙藤</p>
+            </li>
+            <li id="紫金藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/64.jpg" title="紫金藤" id="C241" alt="紫金藤"></a>
+                <p>紫金藤</p>
+            </li>
+            <li id="南藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/65.jpg" title="南藤" id="C242" alt="南藤"></a>
+                <p>南藤</p>
+            </li>
+            <li id="清风藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/66.jpg" title="清风藤" id="C243" alt="清风藤"></a>
+                <p>清风藤</p>
+            </li>
+            <li id="百灵藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/logo.png" title="百灵藤" id="C244" alt="百灵藤"></a>
+                <p>百灵藤</p>
+            </li>
+            <li id="紫藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/68.jpg" title="紫藤" id="C245" alt="紫藤"></a>
+                <p>紫藤</p>
+            </li>
+            <li id="落雁木">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/logo.png" title="落雁木" id="C246" alt="落雁木"></a>
+                <p>落雁木</p>
+            </li>
+            <li id="千里及">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/70.jpg" title="千里及" id="C247" alt="千里及"></a>
+                <p>千里及</p>
+            </li>
+            <li id="海藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/71.jpg" title="海藤" id="C248" alt="海藤"></a>
+                <p>海藤</p>
+            </li>
+            <li id="鸡血藤">
+                <a href="pages/page_草部/page12/藤.html"><img src="images/草3/72.jpg" title="鸡血藤" id="C249" alt="鸡血藤"></a>
+                <p>鸡血藤</p>
+            </li>
+            <li id="泽泻">
+                <a href="pages/page_草部/page12/泽泻.html"><img src="images/草3/73.jpg" title="泽泻" id="C250" alt="泽泻"></a>
+                <p>泽泻</p>
+            </li>
+            <li id="羊蹄">
+                <a href="pages/page_草部/page12/羊蹄.html"><img src="images/草3/74.jpg" title="羊蹄" id="C251" alt="羊蹄"></a>
+                <p>羊蹄</p>
+            </li>
+            <li id="酸模">
+                <a href="pages/page_草部/page12/酸模.html"><img src="images/草3/75.jpg" title="酸模" id="C252" alt="酸模"></a>
+                <p>酸模</p>
+            </li>
+            <li id="菖蒲">
+                <a href="pages/page_草部/page12/菖蒲.html"><img src="images/草3/76.jpg" title="菖蒲" id="C253" alt="菖蒲"></a>
+                <p>菖蒲</p>
+            </li>
+            <li id="菰">
+                <a href="pages/page_草部/page13/菰.html"><img src="images/草3/77.jpg" title="菰" id="C254" alt="菰"></a>
+                <p>菰</p>
+            </li>
+            <li id="水萍">
+                <a href="pages/page_草部/page13/水萍.html"><img src="images/草3/78.jpg" title="水萍" id="C255" alt="水萍"></a>
+                <p>水萍</p>
+            </li>
+            <li id="苹">
+                <a href="pages/page_草部/page13/苹.html"><img src="images/草3/79.jpg" title="苹" id="C256" alt="苹"></a>
+                <p>苹</p>
+            </li>
+            <li id="萍蓬草">
+                <a href="pages/page_草部/page13/萍蓬草.html"><img src="images/草3/80.jpg" title="萍蓬草" id="C257" alt="萍蓬"></a>
+                <p>萍蓬草</p>
+            </li>
+            <li id="水藻">
+                <a href="pages/page_草部/page13/水藻.html"><img src="images/草3/81.jpg" title="水藻" id="C258" alt="水藻"></a>
+                <p>水藻</p>
+            </li>
+            <li id="海藻">
+                <a href="pages/page_草部/page13/海藻.html"><img src="images/草3/82.jpg" title="海藻" id="C259" alt="海藻"></a>
+                <p>海藻</p>
+            </li>
+            <li id="昆布">
+                <a href="pages/page_草部/page13/昆布.html"><img src="images/草3/83.jpg" title="昆布" id="C260" alt="昆布"></a>
+                <p>昆布</p>
+            </li>
+            <li id="石斛">
+                <a href="pages/page_草部/page13/石斛.html"><img src="images/草3/84.jpg" title="石斛" id="C261" alt="石斛"></a>
+                <p>石斛</p>
+            </li>
+            <li id="骨碎补">
+                <a href="pages/page_草部/page13/骨碎补.html"><img src="images/草3/85.jpg" title="骨碎补" id="C262" alt="骨碎补"></a>
+                <p>骨碎补</p>
+            </li>
+            <li id="石韦">
+                <a href="pages/page_草部/page13/石韦.html"><img src="images/草3/86.jpg" title="石韦" id="C263" alt="石韦"></a>
+                <p>石韦</p>
+            </li>
+            <li id="金星草">
+                <a href="pages/page_草部/page13/金星草.html"><img src="images/草3/87.jpg" title="金星草" id="C264" alt="金星草"></a>
+                <p>金星草</p>
+            </li>
+            <li id="景天">
+                <a href="pages/page_草部/page13/景天.html"><img src="images/草3/88.jpg" title="景天" id="C265" alt="景天"></a>
+                <p>景天</p>
+            </li>
+            <li id="虎耳草">
+                <a href="pages/page_草部/page13/虎耳草.html"><img src="images/草3/89.jpg" title="虎耳草" id="C266" alt="虎耳草"></a>
+                <p>虎耳草</p>
+            </li>
+            <li id="石胡荽">
+                <a href="pages/page_草部/page13/石胡荽.html"><img src="images/草3/90.jpg" title="石胡荽" id="C267" alt="石胡荽"></a>
+                <p>石胡荽</p>
+            </li>
+            <li id="螺旋草">
+                <a href="pages/page_草部/page13/螺旋草.html"><img src="images/草3/91.jpg" title="螺旋草" id="C268" alt="螺旋草"></a>
+                <p>螺旋草</p>
+            </li>
+            <li id="酢浆草">
+                <a href="pages/page_草部/page13/酢浆草.html"><img src="images/草3/92.jpg" title="酢浆草" id="C269" alt="酢浆草"></a>
+                <p>酢浆草</p>
+            </li>
+            <li id="地锦">
+                <a href="pages/page_草部/page13/地锦.html"><img src="images/草3/93.jpg" title="地锦" id="C270" alt="地锦"></a>
+                <p>地锦</p>
+            </li>
+            <li id="陟厘">
+                <a href="pages/page_草部/page13/陟厘.html"><img src="images/草3/94.jpg" title="陟厘" id="C271" alt="陟厘"></a>
+                <p>陟厘</p>
+            </li>
+            <li id="昨叶何草">
+                <a href="pages/page_草部/page13/昨叶何草.html"><img src="images/草3/95.jpg" title="昨叶何草" id="C282" alt="昨叶何草"></a>
+                <p>昨叶何草</p>
+            </li>
+            <li id="土马">
+                <a href="pages/page_草部/page13/土马.html"><img src="images/logo.png" title="土马" id="C283" alt="土马"></a>
+                <p>土马</p>
+            </li>
+            <li id="卷柏">
+                <a href="pages/page_草部/page14/卷柏.html"><img src="images/草3/97.jpg" title="卷柏" id="C284" alt="卷柏"></a>
+                <p>卷柏</p>
+            </li>
+            <li id="石松">
+                <a href="pages/page_草部/page14/石松.html"><img src="images/草3/98.jpg" title="石松" id="C285" alt="石松"></a>
+                <p>石松</p>
+            </li>
+            <li id="马勃">
+                <a href="pages/page_草部/page14/马勃.html"><img src="images/草3/99.jpg" title="马勃" id="C286" alt="马勃"></a>
+                <p>马勃</p>
+            </li>
+            <li id="柏">
+                <a href="pages/page_木部/page1/柏.html"><img  src="images/木/1.jpg" title="柏" id="M1" alt="柏"></a>
+                <p>柏</p>
+            </li>
+            <li id="丁香">
+                <a href="pages/page_木部/page1/丁香.html"><img  src="images/木/2.jpg" title="丁香" id="M2" alt="丁香"></a>
+                <p>丁香</p>
+            </li>
+            <li id="松">
+                <a href="pages/page_木部/page1/松.html"><img  src="images/木/3-松香.jpg" title="松" id="M3" alt="松"></a>
+                <p>松</p>
+            </li>
+            <li id="杉">
+                <a href="pages/page_木部/page1/杉.html"><img  src="images/木/4.jpg" title="杉" id="M4" alt="杉"></a>
+                <p>杉</p>
+            </li>
+            <li id="桂">
+                <a href="pages/page_木部/page1/桂.html"><img  src="images/木/5.jpg" title="桂" id="M5" alt="桂"></a>
+                <p>桂</p>
+            </li>
+            <li id="木兰">
+                <a href="pages/page_木部/page1/木兰.html"><img  src="images/木/6.jpg" title="木兰" id="M6" alt="木兰"></a>
+                <p>木兰</p>
+            </li>
+            <li id="辛夷">
+                <a href="pages/page_木部/page1/辛夷.html"><img  src="images/木/7.jpg" title="辛夷" id="M7" alt="辛夷"></a>
+                <p>辛夷</p>
+            </li>
+            <li id="降真香">
+                <a href="pages/page_木部/page1/降真香.html"><img  src="images/木/8.jpg" title="降真香" id="M8" alt="降真香"></a>
+                <p>降真香</p>
+            </li>
+            <li id="楠">
+                <a href="pages/page_木部/page1/楠.html"><img  src="images/木/9.jpg" title="楠" id="M9" alt="楠"></a>
+                <p>楠</p>
+            </li>
+            <li id="樟">
+                <a href="pages/page_木部/page1/樟.html"><img  src="images/木/10.jpg" title="樟" id="M10" alt="樟"></a>
+                <p>樟</p>
+            </li>
+            <li id="钓樟">
+                <a href="pages/page_木部/page1/钓樟.html"><img  src="images/木/11.jpg" title="钓樟" id="M11" alt="钓樟"></a>
+                <p>钓樟</p>
+            </li>
+            <li id="枫香脂">
+                <a href="pages/page_木部/page1/枫香脂.html"><img  src="images/木/12.jpg" title="枫香脂" id="M12" alt="枫香脂"></a>
+                <p>枫香脂</p>
+            </li>
+            <li id="熏陆香">
+                <a href="pages/page_木部/page1/熏陆香.html"><img  src="images/木/13.jpg" title="熏陆香" id="M13" alt="熏陆香"></a>
+                <p>熏陆香</p>
+            </li>
+            <li id="没药">
+                <a href="pages/page_木部/page1/没药.html"><img  src="images/木/14.jpg" title="没药" id="M14" alt="没药"></a>
+                <p>没药</p>
+            </li>
+            <li id="骐竭">
+                <a href="pages/page_木部/page1/骐竭.html"><img  src="images/木/15.jpg" title="骐竭" id="M15" alt="骐竭"></a>
+                <p>骐竭</p>
+            </li>
+            <li id="安息香">
+                <a href="pages/page_木部/page1/安息香.html"><img  src="images/木/16.jpg" title="安息香" id="M16" alt="安息香"></a>
+                <p>安息香</p>
+            </li>
+            <li id="龙脑香">
+                <a href="pages/page_木部/page1/龙脑香.html"><img  src="images/木/17.jpg" title="龙脑香" id="M17" alt="龙脑香"></a>
+                <p>龙脑香</p>
+            </li>
+            <li id="樟脑">
+                <a href="pages/page_木部/page1/樟脑.html"><img  src="images/木/18.jpg" title="樟脑" id="M18" alt="樟脑"></a>
+                <p>樟脑</p>
+            </li>
+            <li id="芦荟">
+                <a href="pages/page_木部/page1/芦荟.html"><img  src="images/木/20.jpg" title="芦荟" id="M20" alt="芦荟"></a>
+                <p>芦荟</p>
+            </li>
+            <li id="乌木">
+                <a href="pages/page_木部/page2/乌木.html"><img  src="images/木/21.jpg" title="乌木" id="M21" alt="乌木"></a>
+                <p>乌木</p>
+            </li>
+            <li id="苏方木">
+                <a href="pages/page_木部/page2/苏方木.html"><img  src="images/木/22.jpg" title="苏方木" id="M22" alt="苏方木"></a>
+                <p>苏方木</p>
+            </li>
+            <li id="芜荑">
+                <a href="pages/page_木部/page2/芜荑.html"><img  src="images/木/23.jpg" title="芜荑" id="M23" alt="芜荑"></a>
+                <p>芜荑</p>
+            </li>
+            <li id="榆">
+                <a href="pages/page_木部/page2/榆.html"><img  src="images/木/24.jpg" title="榆" id="M24" alt="榆"></a>
+                <p>榆</p>
+            </li>
+            <li id="白杨">
+                <a href="pages/page_木部/page2/白杨.html"><img  src="images/木/25.jpg" title="白杨" id="M25" alt="白杨"></a>
+                <p>白杨</p>
+            </li>
+            <li id="水杨">
+                <a href="pages/page_木部/page2/水杨.html"><img  src="images/木/26.jpg" title="水杨" id="M26" alt="水杨"></a>
+                <p>水杨</p>
+            </li>
+            <li id="树柳">
+                <a href="pages/page_木部/page2/树柳.html"><img  src="images/木/27.jpg" title="树柳" id="M27" alt="树柳"></a>
+                <p>树柳</p>
+            </li>
+            <li id="柳">
+                <a href="pages/page_木部/page2/柳.html"><img  src="images/木/28.jpg" title="柳" id="M28" alt="柳"></a>
+                <p>柳</p>
+            </li>
+            <li id="榉">
+                <a href="pages/page_木部/page2/榉.html"><img  src="images/木/29.jpg" title="榉" id="M29" alt="榉"></a>
+                <p>榉</p>
+            </li>
+            <li id="诃黎勒">
+                <a href="pages/page_木部/page2/诃黎勒.html"><img  src="images/木/30.jpg" title="诃黎勒" id="M30" alt="诃黎勒"></a>
+                <p>诃黎勒</p>
+            </li>
+            <li id="无患子">
+                <a href="pages/page_木部/page2/无患子.html"><img  src="images/木/31.jpg" title="无患子" id="M31" alt="无患子"></a>
+                <p>无患子</p>
+            </li>
+            <li id="肥筇荚">
+                <a href="pages/page_木部/page2/肥筇荚.html"><img  src="images/木/32.jpg" title="肥筇荚" id="M32" alt="肥筇荚"></a>
+                <p>肥筇荚</p>
+            </li>
+            <li id="皂荚">
+                <a href="pages/page_木部/page2/皂荚.html"><img  src="images/木/33.jpg" title="皂荚" id="M33" alt="皂荚"></a>
+                <p>皂荚</p>
+            </li>
+            <li id="合欢">
+                <a href="pages/page_木部/page2/合欢.html"><img  src="images/木/34.jpg" title="合欢" id="M34" alt="合欢"></a>
+                <p>合欢</p>
+            </li>
+            <li id="秦皮">
+                <a href="pages/page_木部/page2/秦皮.html"><img  src="images/木/35.jpg" title="秦皮" id="M35" alt="秦皮"></a>
+                <p>秦皮</p>
+            </li>
+            <li id="槐">
+                <a href="pages/page_木部/page2/槐.html"><img  src="images/木/36-槐角.jpg" title="槐" id="M36" alt="槐"></a>
+                <p>槐</p>
+            </li>
+            <li id="楝">
+                <a href="pages/page_木部/page2/楝.html"><img  src="images/木/37.jpg" title="楝" id="M37" alt="楝"></a>
+                <p>楝</p>
+            </li>
+            <li id="海桐">
+                <a href="pages/page_木部/page2/海桐.html"><img  src="images/木/38.jpg" title="海桐" id="M38" alt="海桐"></a>
+                <p>海桐</p>
+            </li>
+            <li id="罂子桐">
+                <a href="pages/page_木部/page2/罂子桐.html"><img  src="images/木/39.jpg" title="罂子桐" id="M39" alt="罂子桐"></a>
+                <p>罂子桐</p>
+            </li>
+            <li id="梧桐">
+                <a href="pages/page_木部/page2/梧桐.html"><img  src="images/木/40.jpg" title="梧桐" id="M40" alt="梧桐"></a>
+                <p>梧桐</p>
+            </li>
+            <li id="桐">
+                <a href="pages/page_木部/page3/桐.html"><img  src="images/木/43.jpg" title="桐" id="M41" alt="桐"></a>
+                <p>桐</p>
+            </li>
+            <li id="楸">
+                <a href="pages/page_木部/page3/楸.html"><img  src="images/木/42.jpg" title="楸" id="M42" alt="楸"></a>
+                <p>楸</p>
+            </li>
+            <li id="漆">
+                <a href="pages/page_木部/page3/漆.html"><img  src="images/木/44.jpg" title="漆" id="M43" alt="漆"></a>
+                <p>漆</p>
+            </li>
+            <li id="椿樗">
+                <a href="pages/page_木部/page3/椿樗.html"><img  src="images/木/46.jpg" title="椿樗" id="M44" alt="椿樗"></a>
+                <p>椿樗</p>
+            </li>
+            <li id="杜仲">
+                <a href="pages/page_木部/page3/杜仲.html"><img  src="images/木/47.jpg" title="杜仲" id="M45" alt="杜仲"></a>
+                <p>杜仲</p>
+            </li>
+            <li id="厚朴">
+                <a href="pages/page_木部/page3/厚朴.html"><img  src="images/木/48.jpg" title="厚朴" id="M46" alt="厚朴"></a>
+                <p>厚朴</p>
+            </li>
+            <li id="小蘖">
+                <a href="pages/page_木部/page3/小蘖.html"><img  src="images/木/49.jpg" title="小蘖" id="M47" alt="小蘖"></a>
+                <p>小蘖</p>
+            </li>
+            <li id="檀">
+                <a href="pages/page_木部/page3/檀.html"><img  src="images/木/50.jpg" title="檀" id="M48" alt="檀"></a>
+                <p>檀</p>
+            </li>
+            <li id="蘖木">
+                <a href="pages/page_木部/page3/蘖木.html"><img  src="images/木/51.jpg" title="蘖木" id="M49" alt="蘖木"></a>
+                <p>蘖木</p>
+            </li>
+            <li id="桦木">
+                <a href="pages/page_木部/page3/桦木.html"><img  src="images/木/52.jpg" title="桦木" id="M50" alt="桦木"></a>
+                <p>桦木</p>
+            </li>
+            <li id="棕榈">
+                <a href="pages/page_木部/page3/棕榈.html"><img  src="images/木/53.jpg" title="棕榈" id="M51" alt="棕榈"></a>
+                <p>棕榈</p>
+            </li>
+            <li id="乌臼木">
+                <a href="pages/page_木部/page3/乌臼木.html"><img  src="images/木/54.jpg" title="乌臼木" id="M52" alt="乌臼木"></a>
+                <p>乌臼木</p>
+            </li>
+            <li id="巴豆">
+                <a href="pages/page_木部/page3/巴豆.html"><img  src="images/木/55.jpg" title="巴豆" id="M53" alt="巴豆"></a>
+                <p>巴豆</p>
+            </li>
+            <li id="大风子">
+                <a href="pages/page_木部/page3/大风子.html"><img  src="images/木/56.jpg" title="大风子" id="M54" alt="大风子"></a>
+                <p>大风子</p>
+            </li>
+            <li id="阿魏">
+                <a href="pages/page_木部/page3/阿魏.html"><img  src="images/木/57.jpg" title="阿魏" id="M55" alt="阿魏"></a>
+                <p>阿魏</p>
+            </li>
+            <li id="相思子">
+                <a href="pages/page_木部/page3/相思子.html"><img  src="images/木/58.jpg" title="相思子" id="M56" alt="相思子"></a>
+                <p>相思子</p>
+            </li>
+            <li id="桑">
+                <a href="pages/page_木部/page3/桑.html"><img  src="images/木/59.jpg" title="桑" id="M57" alt="桑"></a>
+                <p>桑</p>
+            </li>
+            <li id="柘">
+                <a href="pages/page_木部/page3/柘.html"><img  src="images/木/60.jpg" title="柘" id="M58" alt="柘"></a>
+                <p>柘</p>
+            </li>
+            <li id="楮">
+                <a href="pages/page_木部/page3/楮.html"><img  src="images/木/61.jpg" title="楮" id="M59" alt="楮"></a>
+                <p>楮</p>
+            </li>
+            <li id="枸橘">
+                <a href="pages/page_木部/page3/枸橘.html"><img  src="images/木/62.jpg" title="枸橘" id="M60" alt="枸橘"></a>
+                <p>枸橘</p>
+            </li>
+            <li id="栀子">
+                <a href="pages/page_木部/page4/栀子.html"><img  src="images/木/63.jpg" title="栀子" id="M61" alt="栀子"></a>
+                <p>栀子</p>
+            </li>
+            <li id="酸枣">
+                <a href="pages/page_木部/page4/酸枣.html"><img  src="images/木/64.jpg" title="酸枣" id="M62" alt="酸枣"></a>
+                <p>酸枣</p>
+            </li>
+            <li id="白棘">
+                <a href="pages/page_木部/page4/白棘.html"><img  src="images/木/65.jpg" title="白棘" id="M63" alt="白棘"></a>
+                <p>白棘</p>
+            </li>
+            <li id="蕤核">
+                <a href="pages/page_木部/page4/蕤核.html"><img  src="images/木/66.jpg" title="蕤核" id="M64" alt="蕤核"></a>
+                <p>蕤核</p>
+            </li>
+            <li id="山茱萸">
+                <a href="pages/page_木部/page4/山茱萸.html"><img  src="images/木/67.jpg" title="山茱萸" id="M65" alt="山茱萸"></a>
+                <p>山茱萸</p>
+            </li>
+            <li id="胡颓子">
+                <a href="pages/page_木部/page4/胡颓子.html"><img  src="images/木/68.jpg" title="胡颓子" id="M66" alt="胡颓子"></a>
+                <p>胡颓子</p>
+            </li>
+            <li id="金樱子">
+                <a href="pages/page_木部/page4/金樱子.html"><img  src="images/木/69.jpg" title="金樱子" id="M67" alt="金樱子"></a>
+                <p>金樱子</p>
+            </li>
+            <li id="郁李">
+                <a href="pages/page_木部/page4/郁李.html"><img  src="images/木/70.jpg" title="郁李" id="M68" alt="郁李"></a>
+                <p>郁李</p>
+            </li>
+            <li id="鼠李">
+                <a href="pages/page_木部/page4/鼠李.html"><img  src="images/木/71.jpg" title="鼠李" id="M69" alt="鼠李"></a>
+                <p>鼠李</p>
+            </li>
+            <li id="女贞">
+                <a href="pages/page_木部/page4/女贞.html"><img  src="images/木/72.jpg" title="女贞" id="M70" alt="女贞"></a>
+                <p>女贞</p>
+            </li>
+            <li id="冬青">
+                <a href="pages/page_木部/page4/冬青.html"><img  src="images/木/73.jpg" title="冬青" id="M71" alt="冬青"></a>
+                <p>冬青</p>
+            </li>
+            <li id="枸骨">
+                <a href="pages/page_木部/page4/枸骨.html"><img  src="images/木/74.jpg" title="枸骨" id="M72" alt="枸骨"></a>
+                <p>枸骨</p>
+            </li>
+            <li id="卫矛">
+                <a href="pages/page_木部/page4/卫矛.html"><img  src="images/木/75.jpg" title="卫矛" id="M73" alt="卫矛"></a>
+                <p>卫矛</p>
+            </li>
+            <li id="南烛">
+                <a href="pages/page_木部/page4/南烛.html"><img  src="images/木/76.jpg" title="南烛" id="M74" alt="南烛"></a>
+                <p>南烛</p>
+            </li>
+            <li id="五加">
+                <a href="pages/page_木部/page4/五加.html"><img  src="images/木/77.jpg" title="五加" id="M75" alt="五加"></a>
+                <p>五加</p>
+            </li>
+            <li id="枸杞、地骨皮">
+                <a href="pages/page_木部/page4/枸杞.html"><img  src="images/木/78-地骨皮.jpg" title="枸杞、地骨皮" id="M76" alt="枸杞、地骨皮"></a>
+                <p>枸杞、地骨皮</p>
+            </li>
+            <li id="石南">
+                <a href="pages/page_木部/page4/石南.html"><img  src="images/木/79.jpg" title="石南" id="M77" alt="石南"></a>
+                <p>石南</p>
+            </li>
+            <li id="牡荆">
+                <a href="pages/page_木部/page4/牡荆.html"><img  src="images/木/80.jpg" title="牡荆" id="M78" alt="牡荆"></a>
+                <p>牡荆</p>
+            </li>
+            <li id="紫荆">
+                <a href="pages/page_木部/page4/紫荆.html"><img  src="images/木/81.jpg" title="紫荆" id="M79" alt="紫荆"></a>
+                <p>紫荆</p>
+            </li>
+            <li id="木槿">
+                <a href="pages/page_木部/page4/木槿.html"><img  src="images/木/82.jpg" title="木槿" id="M80" alt="木槿"></a>
+                <p>木槿</p>
+            </li>
+            <li id="木芙蓉">
+                <a href="pages/page_木部/page5/木芙蓉.html"><img  src="images/木/83.jpg" title="木芙蓉" id="M81" alt="木芙蓉"></a>
+                <p>木芙蓉</p>
+            </li>
+            <li id="接骨木">
+                <a href="pages/page_木部/page5/接骨木.html"><img  src="images/木/84.jpg" title="接骨木" id="M82" alt="接骨木"></a>
+                <p>接骨木</p>
+            </li>
+            <li id="茯苓">
+                <a href="pages/page_木部/page5/茯苓.html"><img  src="images/木/85.jpg" title="茯苓" id="M83" alt="茯苓"></a>
+                <p>茯苓</p>
+            </li>
+            <li id="琥珀">
+                <a href="pages/page_木部/page5/琥珀.html"><img  src="images/木/86.jpg" title="琥珀" id="M84" alt="琥珀"></a>
+                <p>琥珀</p>
+            </li>
+            <li id="猪苓">
+                <a href="pages/page_木部/page5/猪苓.html"><img  src="images/木/87.jpg" title="猪苓" id="M85" alt="猪苓"></a>
+                <p>猪苓</p>
+            </li>
+            <li id="雷丸">
+                <a href="pages/page_木部/page5/雷丸.html"><img  src="images/木/88.jpg" title="雷丸" id="M86" alt="雷丸"></a>
+                <p>雷丸</p>
+            </li>
+            <li id="桑上寄生">
+                <a href="pages/page_木部/page5/桑上寄生.html"><img  src="images/木/89.jpg" title="桑上寄生" id="M87" alt="桑上寄生"></a>
+                <p>桑上寄生</p>
+            </li>
+            <li id="竹">
+                <a href="pages/page_木部/page5/竹.html"><img  src="images/木/90.jpg" title="竹" id="M88" alt="竹"></a>
+                <p>竹</p>
+            </li>
+            <li id="竹黄">
+                <a href="pages/page_木部/page5/竹黄.html"><img  src="images/木/91.jpg" title="竹黄" id="M89" alt="竹黄"></a>
+                <p>竹黄</p>
+            </li>
+            <li id="李">
+                <a href="pages/page_果部/page1/李.html"><img  src="images/果/1.jpg" title="李" id="F1" alt="李"></a>
+                <p>李</p>
+            </li>
+            <li id="杏">
+                <a href="pages/page_果部/page1/杏.html"><img  src="images/果/2.jpg" title="杏" id="F2" alt="杏"></a>
+                <p>杏</p>
+            </li>
+            <li id="巴旦杏">
+                <a href="pages/page_果部/page1/巴旦杏.html"><img  src="images/果/3.jpg" title="巴旦杏" id="F3" alt="巴旦杏"></a>
+                <p>巴旦杏</p>
+            </li>
+            <li id="梅">
+                <a href="pages/page_果部/page1/梅.html"><img  src="images/果/4.jpg" title="梅" id="F4" alt="梅"></a>
+                <p>梅</p>
+            </li>
+            <li id="榔梅">
+                <a href="pages/page_果部/page1/榔梅.html"><img  src="images/果/5.jpg" title="榔梅" id="F5" alt="榔梅"></a>
+                <p>榔梅</p>
+            </li>
+            <li id="桃">
+                <a href="pages/page_果部/page1/桃.html"><img  src="images/果/6.jpg" title="桃" id="F6" alt="桃"></a>
+                <p>桃</p>
+            </li>
+            <li id="栗">
+                <a href="pages/page_果部/page1/栗.html"><img  src="images/果/7.jpg" title="栗" id="F7" alt="胡麻"></a>
+                <p>栗</p>
+            </li>
+            <li id="乌芋">
+                <a href="pages/page_果部/page1/乌芋.html"><img  src="images/果/8.jpg" title="乌芋" id="F8" alt="乌芋"></a>
+                <p>乌芋</p>
+            </li>
+            <li id="梨">
+                <a href="pages/page_果部/page1/梨.html"><img  src="images/果/9.jpg" title="梨" id="F9" alt="梨"></a>
+                <p>梨</p>
+            </li>
+            <li id="木瓜">
+                <a href="pages/page_果部/page1/木瓜.html"><img  src="images/果/10.jpg" title="木瓜" id="F10" alt="木瓜"></a>
+                <p>木瓜</p>
+            </li>
+            <li id="楂子">
+                <a href="pages/page_果部/page1/楂子.html"><img  src="images/果/11.jpg" title="楂子" id="F11" alt="楂子"></a>
+                <p>楂子</p>
+            </li>
+            <li id="枣">
+                <a href="pages/page_果部/page1/枣.html"><img  src="images/果/12.jpg" title="枣" id="F12" alt="枣"></a>
+                <p>枣</p>
+            </li>
+            <li id="山楂">
+                <a href="pages/page_果部/page1/山楂.html"><img  src="images/果/13.jpg" title="山楂" id="F13" alt="山楂"></a>
+                <p>山楂</p>
+            </li>
+            <li id="林檎">
+                <a href="pages/page_果部/page1/林檎.html"><img  src="images/果/14.jpg" title="林檎" id="F14" alt="林檎"></a>
+                <p>林檎</p>
+            </li>
+            <li id="柿">
+                <a href="pages/page_果部/page1/柿.html"><img  src="images/果/15.jpg" title="柿" id="F15" alt="柿"></a>
+                <p>柿</p>
+            </li>
+            <li id="榲柏">
+                <a href="pages/page_果部/page1/榲柏.html"><img  src="images/果/16.jpg" title="榲柏" id="F16" alt="榲柏"></a>
+                <p>榲柏</p>
+            </li>
+            <li id="橘">
+                <a href="pages/page_果部/page1/橘.html"><img  src="images/果/17.jpg" title="橘" id="F17" alt="橘"></a>
+                <p>橘</p>
+            </li>
+            <li id="柑">
+                <a href="pages/page_果部/page1/柑.html"><img  src="images/果/18.jpg" title="柑" id="F18" alt="柑"></a>
+                <p>柑</p>
+            </li>
+            <li id="橙">
+                <a href="pages/page_果部/page1/橙.html"><img  src="images/果/19.jpg" title="橙" id="F19" alt="橙"></a>
+                <p>橙</p>
+            </li>
+            <li id="安石榴">
+                <a href="pages/page_果部/page1/安石榴.html"><img  src="images/果/20.jpg" title="安石榴" id="F20" alt="安石榴"></a>
+                <p>安石榴</p>
+            </li>
+            <li id="枸橼">
+                <a href="pages/page_果部/page1/枸橼.html"><img  src="images/果/21.jpg" title="枸橼" id="F21" alt="枸橼"></a>
+                <p>枸橼</p>
+            </li>
+            <li id="枇杷">
+                <a href="pages/page_果部/page2/枇杷.html"><img  src="images/果/22.jpg" title="枇杷" id="F22" alt="枇杷"></a>
+                <p>枇杷</p>
+            </li>
+            <li id="杨梅">
+                <a href="pages/page_果部/page2/杨梅.html"><img  src="images/果/23.jpg" title="杨梅" id="F23" alt="杨梅"></a>
+                <p>杨梅</p>
+            </li>
+            <li id="柚">
+                <a href="pages/page_果部/page2/柚.html"><img  src="images/果/24.jpg" title="柚" id="F24" alt="柚"></a>
+                <p>柚</p>
+            </li>
+            <li id="银杏">
+                <a href="pages/page_果部/page2/银杏.html"><img  src="images/果/25.jpg" title="银杏" id="F25" alt="银杏"></a>
+                <p>银杏</p>
+            </li>
+            <li id="胡桃">
+                <a href="pages/page_果部/page2/胡桃.html"><img  src="images/果/26.jpg" title="胡桃" id="F26" alt="胡桃"></a>
+                <p>胡桃</p>
+            </li>
+            <li id="榛子">
+                <a href="pages/page_果部/page2/榛子.html"><img  src="images/果/27.jpg" title="榛子" id="F27" alt="榛子"></a>
+                <p>榛子</p>
+            </li>
+            <li id="樱桃">
+                <a href="pages/page_果部/page2/樱桃.html"><img  src="images/果/28.jpg" title="樱桃" id="F28" alt="樱桃"></a>
+                <p>樱桃</p>
+            </li>
+            <li id="橡实">
+                <a href="pages/page_果部/page2/橡实.html"><img  src="images/果/29.jpg" title="橡实" id="F29" alt="橡实"></a>
+                <p>橡实</p>
+            </li>
+            <li id="槲实">
+                <a href="pages/page_果部/page2/槲实.html"><img  src="images/果/30.jpg" title="槲实" id="F30" alt="槲实"></a>
+                <p>槲实</p>
+            </li>
+            <li id="荔枝">
+                <a href="pages/page_果部/page2/荔枝.html"><img  src="images/果/31.jpg" title="荔枝" id="F31" alt="荔枝"></a>
+                <p>荔枝</p>
+            </li>
+            <li id="阿月浑子">
+                <a href="pages/page_果部/page2/阿月浑子.html"><img  src="images/果/32.jpg" title="阿月浑子" id="F32" alt="阿月浑子"></a>
+                <p>阿月浑子</p>
+            </li>
+            <li id="橄槛">
+                <a href="pages/page_果部/page2/橄槛.html"><img  src="images/果/33.jpg" title="橄槛" id="F33" alt="橄槛"></a>
+                <p>橄槛</p>
+            </li>
+            <li id="榧实">
+                <a href="pages/page_果部/page2/榧实.html"><img  src="images/果/34.jpg" title="榧实" id="F34" alt="榧实"></a>
+                <p>榧实</p>
+            </li>
+            <li id="海松子">
+                <a href="pages/page_果部/page2/海松子.html"><img  src="images/果/35.jpg" title="海松子" id="F35" alt="海松子"></a>
+                <p>海松子</p>
+            </li>
+            <li id="龙眼">
+                <a href="pages/page_果部/page2/龙眼.html"><img  src="images/果/36.jpg" title="龙眼" id="F36" alt="龙眼"></a>
+                <p>龙眼</p>
+            </li>
+            <li id="椰子">
+                <a href="pages/page_果部/page2/椰子.html"><img  src="images/果/37.jpg" title="椰子" id="F37" alt="椰子"></a>
+                <p>椰子</p>
+            </li>
+            <li id="波罗蜜">
+                <a href="pages/page_果部/page2/波罗蜜.html"><img  src="images/果/38.jpg" title="波罗蜜" id="F38" alt="波罗蜜"></a>
+                <p>波罗蜜</p>
+            </li>
+            <li id="无花果">
+                <a href="pages/page_果部/page2/无花果.html"><img  src="images/果/39.jpg" title="无花果" id="F39" alt="无花果"></a>
+                <p>无花果</p>
+            </li>
+            <li id="槟榔">
+                <a href="pages/page_果部/page2/槟榔.html"><img  src="images/果/40.jpg" title="槟榔" id="F40" alt="槟榔"></a>
+                <p>槟榔</p>
+            </li>
+            <li id="枳">
+                <a href="pages/page_果部/page2/枳.html"><img  src="images/果/41.jpg" title="枳" id="F41" alt="枳"></a>
+                <p>枳</p>
+            </li>
+            <li id="秦椒">
+                <a href="pages/page_果部/page3/秦椒.html"><img  src="images/果/42.jpg" title="秦椒" id="F42" alt="秦椒"></a>
+                <p>秦椒</p>
+            </li>
+            <li id="蜀椒">
+                <a href="pages/page_果部/page3/蜀椒.html"><img  src="images/果/43.jpg" title="蜀椒" id="F43" alt="蜀椒"></a>
+                <p>蜀椒</p>
+            </li>
+            <li id="马槟榔">
+                <a href="pages/page_果部/page3/马槟榔.html"><img  src="images/果/44.jpg" title="马槟榔" id="F44" alt="马槟榔"></a>
+                <p>马槟榔</p>
+            </li>
+            <li id="毕澄茄">
+                <a href="pages/page_果部/page3/毕澄茄.html"><img  src="images/果/45.jpg" title="毕澄茄" id="F45" alt="毕澄茄"></a>
+                <p>毕澄茄</p>
+            </li>
+            <li id="茱萸">
+                <a href="pages/page_果部/page3/茱萸.html"><img  src="images/果/46.jpg" title="茱萸" id="F46" alt="茱萸"></a>
+                <p>茱萸</p>
+            </li>
+            <li id="盐麸子">
+                <a href="pages/page_果部/page3/盐麸子.html"><img  src="images/果/47.jpg" title="盐麸子" id="F47" alt="盐麸子"></a>
+                <p>盐麸子</p>
+            </li>
+            <li id="胡椒">
+                <a href="pages/page_果部/page3/胡椒.html"><img  src="images/果/48.jpg" title="胡椒" id="F48" alt="胡椒"></a>
+                <p>胡椒</p>
+            </li>
+            <li id="甜瓜">
+                <a href="pages/page_果部/page3/甜瓜.html"><img  src="images/果/49.jpg" title="甜瓜" id="F49" alt="甜瓜"></a>
+                <p>甜瓜</p>
+            </li>
+            <li id="西瓜">
+                <a href="pages/page_果部/page3/西瓜.html"><img  src="images/果/50.jpg" title="西瓜" id="F50" alt="西瓜"></a>
+                <p>西瓜</p>
+            </li>
+            <li id="葡萄">
+                <a href="pages/page_果部/page3/葡萄.html"><img  src="images/果/51.jpg" title="葡萄" id="F51" alt="葡萄"></a>
+                <p>葡萄</p>
+            </li>
+            <li id="茗">
+                <a href="pages/page_果部/page3/茗.html"><img  src="images/果/52.jpg" title="茗" id="F52" alt="茗"></a>
+                <p>茗</p>
+            </li>
+            <li id="猕猴桃">
+                <a href="pages/page_果部/page3/猕猴桃.html"><img  src="images/果/53.jpg" title="猕猴桃" id="F53" alt="猕猴桃"></a>
+                <p>猕猴桃</p>
+            </li>
+            <li id="甘蔗">
+                <a href="pages/page_果部/page3/甘蔗.html"><img  src="images/果/54.jpg" title="甘蔗" id="F54" alt="甘蔗"></a>
+                <p>甘蔗</p>
+            </li>
+            <li id="沙糖">
+                <a href="pages/page_果部/page3/沙糖.html"><img  src="images/果/55.jpg" title="沙糖" id="F55" alt="沙糖"></a>
+                <p>沙糖</p>
+            </li>
+            <li id="婴奥">
+                <a href="pages/page_果部/page3/婴奥.html"><img  src="images/果/56.jpg" title="婴奥" id="F56" alt="婴奥"></a>
+                <p>婴奥</p>
+            </li>
+            <li id="莲藕">
+                <a href="pages/page_果部/page3/莲藕.html"><img  src="images/果/57.jpg" title="莲藕" id="F57" alt="莲藕"></a>
+                <p>莲藕</p>
+            </li>
+            <li id="芰实">
+                <a href="pages/page_果部/page3/芰实.html"><img  src="images/果/58.jpg" title="芰实" id="F58" alt="芰实"></a>
+                <p>芰实</p>
+            </li>
+            <li id="芡实">
+                <a href="pages/page_果部/page3/芡实.html"><img  src="images/果/59.jpg" title="芡实" id="F59" alt="芡实"></a>
+                <p>芡实</p>
+            </li>
+            <li id="石蜜">
+                <a href="pages/page_果部/page3/石蜜.html"><img  src="images/果/60.jpg" title="石蜜" id="F60" alt="石蜜"></a>
+                <p>石蜜</p>
+            </li>
+            <li id="慈姑">
+                <a href="pages/page_果部/page3/慈姑.html"><img  src="images/果/61.jpg" title="慈姑" id="F61" alt="慈姑"></a>
+                <p>慈姑</p>
+            </li>
+            <li id="露水">
+                <a href="pages/page_水部/page1/露水.html"><img  src="images/水部/1-露水.jpg" title="露水" id="S1" alt="露水"></a>
+                <p>露水</p>
+            </li>
+            <li id="明水">
+                <a href="pages/page_水部/page1/明水.html"><img  src="images/logo.png" title="明水" id="S2" alt="明水"></a>
+                <p>明水</p>
+            </li>
+            <li id="冬霜">
+                <a href="pages/page_水部/page1/冬霜.html"><img  src="images/水部/3-冬霜.jpg" title="冬霜" id="S3" alt="冬霜"></a>
+                <p>冬霜</p>
+            </li>
+            <li id="腊雪">
+                <a href="pages/page_水部/page1/腊雪.html"><img  src="images/水部/4-腊雪.jpg" title="腊雪" id="S4" alt="腊雪"></a>
+                <p>腊雪</p>
+            </li>
+            <li id="夏冰">
+                <a href="pages/page_水部/page1/夏冰.html"><img  src="images/logo.png" title="夏冰" id="S" alt="夏冰"></a>
+                <p>夏冰</p>
+            </li>
+            <li id="半天河">
+                <a href="pages/page_水部/page1/半天河.html"><img  src="images/logo.png" title="半天河" id="S5" alt="半天河"></a>
+                <p>半天河</p>
+            </li>
+            <li id="流水">
+                <a href="pages/page_水部/page1/流水.html"><img  src="images/水部/7-流水.jpg" title="流水" id="S6" alt="流水"></a>
+                <p>流水</p>
+            </li>
+            <li id="井泉水">
+                <a href="pages/page_水部/page1/井泉水.html"><img  src="images/水部/8-井泉水.jpg" title="井泉水" id="S7" alt="井泉水"></a>
+                <p>井泉水</p>
+            </li>
+            <li id="醴泉">
+                <a href="pages/page_水部/page1/醴泉.html"><img  src="images/logo.png" title="醴泉" id="S8" alt="醴泉"></a>
+                <p>醴泉</p>
+            </li>
+            <li id="温汤">
+                <a href="pages/page_水部/page1/温汤.html"><img  src="images/水部/10-温汤.jpg" title="温汤" id="S9" alt="温汤"></a>
+                <p>温汤</p>
+            </li>
+            <li id="卤水">
+                <a href="pages/page_水部/page1/盐胆水.html"><img  src="images/水部/11-卤水.jpg" title="卤水" id="S10" alt="卤水"></a>
+                <p>卤水</p>
+            </li>
+            <li id="阿井泉">
+                <a href="pages/page_水部/page1/阿井泉.html"><img  src="images/水部/12-阿井泉.jpg" title="阿井泉." id="S11" alt="阿井泉."></a>
+                <p>阿井泉</p>
+            </li>
+            <li id="地浆">
+                <a href="pages/page_水部/page1/地浆.html"><img  src="images/水部/13-地浆.jpg" title="地浆" id="S12" alt="地浆"></a>
+                <p>地浆</p>
+            </li>
+            <li id="热汤">
+                <a href="pages/page_水部/page1/热汤.html"><img  src="images/logo.png" title="热汤" id="S13" alt="热汤"></a>
+                <p>热汤</p>
+            </li>
+            <li id="浆水">
+                <a href="pages/page_水部/page1/浆水.html"><img  src="images/logo.png" title="浆水" id="S14" alt="浆水"></a>
+                <p>浆水</p>
+            </li>
+            <li id="炭火">
+                <a href="pages/page_火部/page1/炭火.html"><img  src="images/火部/1.jpg" title="炭火" id="H1" alt="炭火"></a>
+                <p>炭火</p>
+            </li>
+            <li id="艾火">
+                <a href="pages/page_火部/page1/艾火.html"><img  src="images/火部/2.png" title="艾火" id="H2" alt="艾火"></a>
+                <p>艾火</p>
+            </li>
+            <li id="针火">
+                <a href="pages/page_火部/page1/针火.html"><img  src="images/火部/3.jpg" title="针火" id="H3" alt="针火"></a>
+                <p>针火</p>
+            </li>
+            <li id="灯火">
+                <a href="pages/page_火部/page1/灯火.html"><img  src="images/火部/4.jpg" title="灯火" id="H4" alt="灯火"></a>
+                <p>灯火</p>
+            </li>
+            <li id="神针火">
+                <a href="pages/page_火部/page1/神针火.html"><img  src="images/火部/5.jpg" title="神针火" id="H5" alt="神针火"></a>
+                <p>神针火</p>
+            </li>
+            <li id="鹤">
+                <a href="pages/page_禽部/鹤.html"><img  src="images/禽部/1-鹤.jpg" title="鹤" id="Q1" alt="鹤"></a>
+                <p>鹤</p>
+            </li>
+            <li id="鹈鹕">
+                <a href="pages/page_禽部/鹈鹕.html"><img  src="images/禽部/2-鹈鹕.jpg" title="鹈鹕" id="Q2" alt="鹈鹕"></a>
+                <p>鹈鹕</p>
+            </li>
+            <li id="鹅">
+                <a href="pages/page_禽部/鹅.html"><img  src="images/禽部/3-鹅.jpg" title="鹅" id="Q3" alt="鹅"></a>
+                <p>鹅</p>
+            </li>
+            <li id="鹜">
+                <a href="pages/page_禽部/鹜.html"><img  src="images/禽部/4-鹜.jpg" title="鹜" id="Q4" alt="鹜"></a>
+                <p>鹜</p>
+            </li>
+            <li id="凫">
+                <a href="pages/page_禽部/凫.html"><img  src="images/禽部/5-凫.jpg" title="凫" id="Q5" alt="凫"></a>
+                <p>凫</p>
+            </li>
+            <li id="鸡">
+                <a href="pages/page_禽部/鸡.html"><img  src="images/禽部/6-鸡.jpg" title="鸡" id="Q6" alt="鸡"></a>
+                <p>鸡</p>
+            </li>
+            <li id="雉">
+                <a href="pages/page_禽部/雉.html"><img  src="images/禽部/7-雉.jpg" title="雉" id="Q7" alt="雉"></a>
+                <p>雉</p>
+            </li>
+            <li id="鸽">
+                <a href="pages/page_禽部/鸽.html"><img  src="images/禽部/8-鸽.jpg" title="鸽" id="Q8" alt="鸽"></a>
+                <p>鸽</p>
+            </li>
+            <li id="雀">
+                <a href="pages/page_禽部/雀.html"><img  src="images/禽部/9-雀.jpg" title="雀" id="Q9" alt="雀"></a>
+                <p>雀</p>
+            </li>
+            <li id="伏翼">
+                <a href="pages/page_禽部/伏翼.html"><img  src="images/禽部/10-伏翼.jpg" title="伏翼" id="Q10" alt="伏翼"></a>
+                <p>伏翼</p>
+            </li>
+            <li id="寒号虫">
+                <a href="pages/page_禽部/寒号虫.html"><img  src="images/禽部/11-寒号虫.jpg" title="寒号虫" id="Q11" alt="寒号虫"></a>
+                <p>寒号虫</p>
+            </li>
+            <li id="斑鸠">
+                <a href="pages/page_禽部/斑鸠.html"><img  src="images/禽部/12-斑鸠.jpg" title="斑鸠" id="Q12" alt="斑鸠"></a>
+                <p>斑鸠</p>
+            </li>
+            <li id="乌鸦">
+                <a href="pages/page_禽部/乌鸦.html"><img  src="images/禽部/13-乌鸦.jpg" title="乌鸦" id="Q13" alt="乌鸦"></a>
+                <p>乌鸦</p>
+            </li>
+            <li id="鹊">
+                <a href="pages/page_禽部/鹊.html"><img  src="images/禽部/14-鹊.jpg" title="鹊" id="Q14" alt="鹊"></a>
+                <p>鹊</p>
+            </li>
+            <li id="鹰">
+                <a href="pages/page_禽部/鹰.html"><img  src="images/禽部/15-鹰.jpg" title="鹰" id="Q15" alt="鹰"></a>
+                <p>鹰</p>
+            </li>
+            <li id="鹗">
+                <a href="pages/page_禽部/鹗.html"><img  src="images/禽部/16-鹗.jpg" title="鹗" id="Q16" alt="鹗"></a>
+                <p>鹗</p>
+            </li>
+            <li id="韭">
+                <a href="pages/page_菜部/韭.html"><img  src="images/菜部/1-韭.jpg" title="韭" id="CA1" alt="韭"></a>
+                <p>韭</p>
+            </li>
+            <li id="葱">
+                <a href="pages/page_菜部/葱.html"><img  src="images/菜部/2-葱.jpg" title="葱" id="CA2" alt="葱"></a>
+                <p>葱</p>
+            </li>
+            <li id="薤">
+                <a href="pages/page_菜部/薤.html"><img  src="images/菜部/3-薤.jpg" title="薤" id="CA3" alt="薤"></a>
+                <p>薤</p>
+            </li>
+            <li id="蒜">
+                <a href="pages/page_菜部/蒜.html"><img  src="images/菜部/4-蒜.jpg" title="蒜" id="CA4" alt="蒜"></a>
+                <p>蒜</p>
+            </li>
+            <li id="葫">
+                <a href="pages/page_菜部/葫.html"><img  src="images/菜部/5-葫.jpg" title="葫" id="CA5" alt="葫"></a>
+                <p>葫</p>
+            </li>
+            <li id="芸薹">
+                <a href="pages/page_菜部/芸薹.html"><img  src="images/菜部/6-芸薹.jpg" title="芸薹" id="CA6" alt="芸薹"></a>
+                <p>芸薹</p>
+            </li>
+            <li id="芥">
+                <a href="pages/page_菜部/芥.html"><img  src="images/菜部/7-芥.jpg" title="芥" id="CA7" alt="芥"></a>
+                <p>芥</p>
+            </li>
+            <li id="白芥">
+                <a href="pages/page_菜部/白芥.html"><img  src="images/菜部/8-白芥.jpg" title="白芥" id="CA8" alt="白芥"></a>
+                <p>白芥</p>
+            </li>
+            <li id="芜菁">
+                <a href="pages/page_菜部/芜菁.html"><img  src="images/菜部/9-芜菁.jpg" title="芜菁" id="CA9" alt="芜菁"></a>
+                <p>芜菁</p>
+            </li>
+            <li id="莱菔">
+                <a href="pages/page_菜部/莱菔.html"><img  src="images/菜部/10-莱菔.jpg" title="莱菔" id="CA10" alt="莱菔"></a>
+                <p>莱菔</p>
+            </li>
+            <li id="生姜">
+                <a href="pages/page_菜部/生姜.html"><img  src="images/菜部/11-生姜.jpg" title="生姜" id="CA11" alt="生姜"></a>
+                <p>生姜</p>
+            </li>
+            <li id="干姜">
+                <a href="pages/page_菜部/干姜.html"><img  src="images/菜部/12-干姜.jpg" title="干姜" id="CA12" alt="干姜"></a>
+                <p>干姜</p>
+            </li>
+            <li id="胡荽">
+                <a href="pages/page_菜部/胡荽.html"><img  src="images/菜部/13-胡荽.jpg" title="胡荽" id="CA13" alt="胡荽"></a>
+                <p>胡荽</p>
+            </li>
+            <li id="水芹">
+                <a href="pages/page_菜部/水芹.html"><img  src="images/菜部/14-水芹.jpg" title="水芹" id="CA14" alt="水芹"></a>
+                <p>水芹</p>
+            </li>
+            <li id="茴香">
+                <a href="pages/page_菜部/茴香.html"><img  src="images/菜部/15-茴香.jpg" title="茴香" id="CA15" alt="茴香"></a>
+                <p>茴香</p>
+            </li>
+            <li id="菠菜">
+                <a href="pages/page_菜部/菠菜.html"><img  src="images/菜部/16-菠菜.jpg" title="菠菜" id="CA16" alt="菠菜"></a>
+                <p>菠菜</p>
+            </li>
+            <li id="荠菜">
+                <a href="pages/page_菜部/荠菜.html"><img  src="images/菜部/17-荠菜.jpg" title="荠菜" id="CA17" alt="荠菜"></a>
+                <p>荠菜</p>
+            </li>
+            <li id="菥">
+                <a href="pages/page_菜部/菥.html"><img  src="images/菜部/18-菥.jpg" title="菥" id="CA18" alt="菥"></a>
+                <p>菥</p>
+            </li>
+            <li id="鸡肠草">
+                <a href="pages/page_菜部/鸡肠草.html"><img  src="images/菜部/19-鸡肠草.jpg" title="鸡肠草" id="CA19" alt="鸡肠草"></a>
+                <p>鸡肠草</p>
+            </li>
+            <li id="苜蓿">
+                <a href="pages/page_菜部/苜蓿.html"><img  src="images/菜部/20-苜蓿.jpg" title="苜蓿" id="CA20" alt="苜蓿"></a>
+                <p>苜蓿</p>
+            </li>
+            <li id="苋">
+                <a href="pages/page_菜部/苋.html"><img  src="images/菜部/21-苋.jpg" title="苋" id="CA21" alt="苋"></a>
+                <p>苋</p>
+            </li>
+            <li id="马齿苋">
+                <a href="pages/page_菜部/马齿苋.html"><img  src="images/菜部/22-马齿苋.jpg" title="马齿苋" id="CA22" alt="马齿苋"></a>
+                <p>马齿苋</p>
+            </li>
+            <li id="苦菜">
+                <a href="pages/page_菜部/苦菜.html"><img  src="images/菜部/23-苦菜.jpg" title="苦菜" id="CA23" alt="苦菜"></a>
+                <p>苦菜</p>
+            </li>
+            <li id="莴苣">
+                <a href="pages/page_菜部/莴苣.html"><img  src="images/菜部/24-莴苣.jpg" title="莴苣" id="CA24" alt="莴苣"></a>
+                <p>莴苣</p>
+            </li>
+            <li id="翻白草">
+                <a href="pages/page_菜部/翻白草.html"><img  src="images/菜部/25-翻白草.jpg" title="翻白草" id="CA25" alt="翻白草"></a>
+                <p>翻白草</p>
+            </li>
+            <li id="蒲公英">
+                <a href="pages/page_菜部/蒲公英.html"><img  src="images/菜部/26-蒲公英.jpg" title="蒲公英" id="CA26" alt="蒲公英"></a>
+                <p>蒲公英</p>
+            </li>
+            <li id="蕺">
+                <a href="pages/page_菜部/蕺.html"><img  src="images/菜部/27-蕺.jpg" title="蕺" id="CA27" alt="蕺"></a>
+                <p>蕺</p>
+            </li>
+            <li id="蕨">
+                <a href="pages/page_菜部/蕨.html"><img  src="images/菜部/28-蕨.jpg" title="蕨" id="CA28" alt="蕨"></a>
+                <p>蕨</p>
+            </li>
+            <li id="薇">
+                <a href="pages/page_菜部/薇.html"><img  src="images/菜部/29-薇.jpg" title="薇" id="CA29" alt="薇"></a>
+                <p>薇</p>
+            </li>
+            <li id="翘摇">
+                <a href="pages/page_菜部/翘摇.html"><img  src="images/菜部/30-翘摇.jpg" title="翘摇" id="CA30" alt="翘摇"></a>
+                <p>翘摇</p>
+            </li>
+            <li id="鹿藿">
+                <a href="pages/page_菜部/鹿藿.html"><img  src="images/菜部/31-鹿藿.jpg" title="鹿藿" id="CA31" alt="鹿藿"></a>
+                <p>鹿藿</p>
+            </li>
+            <li id="藜">
+                <a href="pages/page_菜部/藜.html"><img  src="images/菜部/32-藜.jpg" title="藜" id="CA32" alt="藜"></a>
+                <p>藜</p>
+            </li>
+            <li id="芋">
+                <a href="pages/page_菜部/芋.html"><img  src="images/菜部/33-芋.jpg" title="芋" id="CA33" alt="芋"></a>
+                <p>芋</p>
+            </li>
+            <li id="薯蓣">
+                <a href="pages/page_菜部/薯蓣.html"><img  src="images/菜部/34-薯蓣.jpg" title="薯蓣" id="CA34" alt="薯蓣"></a>
+                <p>薯蓣</p>
+            </li>
+            <li id="甘薯">
+                <a href="pages/page_菜部/甘薯.html"><img  src="images/菜部/35-甘薯.jpg" title="甘薯" id="CA35" alt="甘薯"></a>
+                <p>甘薯</p>
+            </li>
+            <li id="百合">
+                <a href="pages/page_菜部/百合.html"><img  src="images/菜部/36-百合.jpg" title="百合" id="CA36" alt="百合"></a>
+                <p>百合</p>
+            </li>
+            <li id="竹笋">
+                <a href="pages/page_菜部/竹笋.html"><img  src="images/菜部/37-竹笋.jpg" title="竹笋" id="CA37" alt="竹笋"></a>
+                <p>竹笋</p>
+            </li>
+            <li id="茄">
+                <a href="pages/page_菜部/茄.html"><img  src="images/菜部/38-茄.jpg" title="茄" id="CA38" alt="茄"></a>
+                <p>茄</p>
+            </li>
+            <li id="壶卢">
+                <a href="pages/page_菜部/壶卢.html"><img  src="images/菜部/39-壶卢.jpg" title="壶卢" id="CA39" alt="壶卢"></a>
+                <p>壶卢</p>
+            </li>
+            <li id="苦瓠">
+                <a href="pages/page_菜部/苦瓠.html"><img  src="images/菜部/40-苦瓠.jpg" title="苦瓠" id="CA40" alt="苦瓠"></a>
+                <p>苦瓠</p>
+            </li>
+            <li id="石花菜">
+                <a href="pages/page_菜部/石花菜.html"><img  src="images/菜部/41-石花菜.jpg" title="石花菜" id="CA41" alt="石花菜"></a>
+                <p>石花菜</p>
+            </li>
+            <li id="冬瓜">
+                <a href="pages/page_菜部/冬瓜.html"><img  src="images/菜部/42-冬瓜.jpg" title="冬瓜" id="CA42" alt="冬瓜"></a>
+                <p>冬瓜</p>
+            </li>
+            <li id="南瓜">
+                <a href="pages/page_菜部/南瓜.html"><img  src="images/菜部/43-南瓜.jpg" title="南瓜" id="CA43" alt="南瓜"></a>
+                <p>南瓜</p>
+            </li>
+            <li id="胡瓜">
+                <a href="pages/page_菜部/胡瓜.html"><img  src="images/菜部/44-胡瓜.jpg" title="胡瓜" id="CA44" alt="胡瓜"></a>
+                <p>胡瓜</p>
+            </li>
+            <li id="丝瓜">
+                <a href="pages/page_菜部/丝瓜<.html"><img  src="images/菜部/45-丝瓜.jpg" title="丝瓜" id="CA45" alt="丝瓜"></a>
+                <p>丝瓜</p>
+            </li>
+            <li id="苦瓜">
+                <a href="pages/page_菜部/苦瓜.html"><img  src="images/菜部/46-苦瓜.jpg" title="苦瓜" id="CA46" alt="苦瓜"></a>
+                <p>苦瓜</p>
+            </li>
+            <li id="紫菜">
+                <a href="pages/page_菜部/紫菜.html"><img  src="images/菜部/47-紫菜.jpg" title="紫菜" id="CA47" alt="紫菜"></a>
+                <p>紫菜</p>
+            </li>
+            <li id="石莼">
+                <a href="pages/page_菜部/石莼.html"><img  src="images/菜部/48-石莼.jpg" title="石莼" id="CA48" alt="石莼"></a>
+                <p>石莼</p>
+            </li>
+            <li id="鹿角菜">
+                <a href="pages/page_菜部/鹿角菜.html"><img  src="images/菜部/49-鹿角菜.jpg" title="鹿角菜" id="CA49" alt="鹿角菜"></a>
+                <p>鹿角菜</p>
+            </li>
+            <li id="龙须菜">
+                <a href="pages/page_菜部/龙须菜.html"><img  src="images/菜部/50-龙须菜.jpg" title="龙须菜" id="CA50" alt="龙须菜"></a>
+                <p>龙须菜</p>
+            </li>
+            <li id="睡菜">
+                <a href="pages/page_菜部/睡菜.html"><img  src="images/菜部/51-睡菜.jpg" title="睡菜" id="CA51" alt="睡菜"></a>
+                <p>睡菜</p>
+            </li>
+            <li id="芝">
+                <a href="pages/page_菜部/芝.html"><img  src="images/菜部/52-芝.jpg" title="芝" id="CA52" alt="芝"></a>
+                <p>芝</p>
+            </li>
+            <li id="木耳">
+                <a href="pages/page_菜部/木耳.html"><img  src="images/菜部/53-木耳.jpg" title="木耳" id="CA53" alt="木耳"></a>
+                <p>木耳</p>
+            </li>
+            <li id="皂荚蕈">
+                <a href="pages/page_菜部/皂荚蕈.html"><img  src="images/菜部/54-皂荚蕈.jpg" title="皂荚蕈" id="CA54" alt="皂荚蕈"></a>
+                <p>皂荚蕈</p>
+            </li>
+            <li id="香蕈">
+                <a href="pages/page_菜部/香蕈.html"><img  src="images/菜部/55-香蕈.jpg" title="香蕈" id="CA55" alt="香蕈"></a>
+                <p>香蕈</p>
+            </li>
+            <li id="蘑菰蕈">
+                <a href="pages/page_菜部/蘑菰蕈.html"><img  src="images/菜部/56-蘑菰蕈.jpg" title="蘑菰蕈" id="CA56" alt="蘑菰蕈"></a>
+                <p>蘑菰蕈</p>
+            </li>
+            <li id="鸡菌">
+                <a href="pages/page_菜部/鸡菌.html"><img  src="images/菜部/57-鸡菌.jpg" title="鸡菌" id="CA57" alt="鸡菌"></a>
+                <p>鸡菌</p>
+            </li>
+            <li id="土菌">
+                <a href="pages/page_菜部/土菌.html"><img  src="images/菜部/58-土菌.jpg" title="土菌" id="CA58" alt="土菌"></a>
+                <p>土菌</p>
+            </li>
+            <li id="地耳">
+                <a href="pages/page_菜部/地耳.html"><img  src="images/菜部/59-地耳.jpg" title="地耳" id="CA59" alt="地耳"></a>
+                <p>地耳</p>
+            </li>
+            <li id="石耳">
+                <a href="pages/page_菜部/石耳.html"><img  src="images/菜部/60-石耳.jpg" title="石耳" id="CA60" alt="石耳"></a>
+                <p>石耳</p>
+            </li>
+            <li id="蜂蜜">
+                <a href="pages/page_虫部/page1/蜂蜜.html"><img  src="images/虫部/1-蜂蜜.jpg" title="蜂蜜" id="I1" alt="蜂蜜"></a>
+                <p>蜂蜜</p>
+            </li>
+            <li id="蜜蜡">
+                <a href="pages/page_虫部/page1/蜜蜡.html"><img  src="images/虫部/2-蜜蜡.jpg" title="蜜蜡" id="I2" alt="蜜蜡"></a>
+                <p>蜜蜡</p>
+            </li>
+            <li id="蜜蜂">
+                <a href="pages/page_虫部/page1/蜜蜂.html"><img  src="images/虫部/3-蜜蜂.gif" title="蜜蜂" id="I3" alt="蜜蜂"></a>
+                <p>蜜蜂</p>
+            </li>
+            <li id="土蜂">
+                <a href="pages/page_虫部/page1/土蜂.html"><img  src="images/虫部/4-土蜂.jpg" title="土蜂" id="I4" alt="土蜂"></a>
+                <p>土蜂</p>
+            </li>
+            <li id="露蜂房">
+                <a href="pages/page_虫部/page1/露蜂房.html"><img  src="images/虫部/5-露蜂房.jpg" title="露蜂房" id="I5" alt="露蜂房"></a>
+                <p>露蜂房</p>
+            </li>
+            <li id="艺翁">
+                <a href="pages/page_虫部/page1/艺翁.html"><img  src="images/虫部/6-艺翁.jpg" title="艺翁" id="I6" alt="艺翁"></a>
+                <p>艺翁</p>
+            </li>
+            <li id="虫白蜡">
+                <a href="pages/page_虫部/page1/虫白蜡.html"><img  src="images/虫部/7-虫白蜡.jpg" title="虫白蜡" id="I7" alt="虫白蜡"></a>
+                <p>虫白蜡</p>
+            </li>
+            <li id="螳螂桑螵蛸">
+                <a href="pages/page_虫部/page1/螳螂桑螵蛸.html"><img  src="images/虫部/8-螳螂桑螵蛸.jpg" title="螳螂桑螵蛸" id="I8" alt="螳螂桑螵蛸"></a>
+                <p>螳螂桑螵蛸</p>
+            </li>
+            <li id="蚕">
+                <a href="pages/page_虫部/page1/蚕.html"><img  src="images/虫部/9-蚕.jpg" title="蚕" id="I9" alt="蚕"></a>
+                <p>蚕</p>
+            </li>
+            <li id="原蚕">
+                <a href="pages/page_虫部/page1/原蚕.html"><img  src="images/logo.png" title="原蚕" id="I10" alt="原蚕"></a>
+                <p>原蚕</p>
+            </li>
+            <li id="九香虫">
+                <a href="pages/page_虫部/page1/九香虫.html"><img  src="images/虫部/11-九香虫.jpg" title="九香虫" id="I11" alt="九香虫"></a>
+                <p>九香虫</p>
+            </li>
+            <li id="樗鸡">
+                <a href="pages/page_虫部/page1/樗鸡.html"><img  src="images/虫部/12-樗鸡.jpg" title="樗鸡" id="I12" alt="樗鸡"></a>
+                <p>樗鸡</p>
+            </li>
+            <li id="斑蝥">
+                <a href="pages/page_虫部/page1/斑蝥.html"><img  src="images/虫部/13-斑蝥.jpg" title="斑蝥" id="I13" alt="斑蝥"></a>
+                <p>斑蝥</p>
+            </li>
+            <li id="芫青">
+                <a href="pages/page_虫部/page1/芫青.html"><img  src="images/虫部/14-芫青.jpg" title="芫青" id="I14" alt="芫青"></a>
+                <p>芫青</p>
+            </li>
+            <li id="葛上亭长">
+                <a href="pages/page_虫部/page1/葛上亭长.html"><img  src="images/虫部/15-葛上亭长.jpg" title="葛上亭长" id="I15" alt="葛上亭长"></a>
+                <p>葛上亭长</p>
+            </li>
+            <li id="地胆">
+                <a href="pages/page_虫部/page1/地胆.html"><img  src="images/虫部/16-地胆.jpg" title="地胆" id="I16" alt="地胆"></a>
+                <p>地胆</p>
+            </li>
+            <li id="蜘蛛">
+                <a href="pages/page_虫部/page1/蜘蛛.html"><img  src="images/虫部/17-蜘蛛.jpg" title="蜘蛛" id="I17" alt="蜘蛛"></a>
+                <p>蜘蛛</p>
+            </li>
+            <li id="壁钱">
+                <a href="pages/page_虫部/page1/壁钱.html"><img  src="images/虫部/18-壁钱.jpg" title="壁钱" id="I18" alt="壁钱"></a>
+                <p>壁钱</p>
+            </li>
+            <li id="蝎">
+                <a href="pages/page_虫部/page1/蝎.html"><img  src="images/虫部/19-蝎.jpg" title="蝎" id="I19" alt="蝎"></a>
+                <p>蝎</p>
+            </li>
+            <li id="水蛭">
+                <a href="pages/page_虫部/page1/水蛭.html"><img  src="images/虫部/20-水蛭.jpg" title="水蛭" id="I20" alt="水蛭"></a>
+                <p>水蛭</p>
+            </li>
+            <li id="蛆">
+                <a href="pages/page_虫部/page2/蛆.html"><img  src="images/虫部/21-蛆.jpg" title="蛆" id="I21" alt="蛆"></a>
+                <p>蛆</p>
+            </li>
+            <li id="蛴螬">
+                <a href="pages/page_虫部/page2/蛴螬.html"><img  src="images/虫部/22-蛴螬.jpg" title="蛴螬" id="I22" alt="蛴螬"></a>
+                <p>蛴螬</p>
+            </li>
+            <li id="蚱蝉">
+                <a href="pages/page_虫部/page2/蚱蝉.html"><img  src="images/虫部/23-蚱蝉.jpg" title="蚱蝉" id="I23" alt="蚱蝉"></a>
+                <p>蚱蝉</p>
+            </li>
+            <li id="蝉蜕">
+                <a href="pages/page_虫部/page2/蝉蜕.html"><img  src="images/虫部/24-蝉蜕.jpg" title="蝉蜕" id="I24" alt="蝉蜕"></a>
+                <p>蝉蜕</p>
+            </li>
+            <li id="蜣螂">
+                <a href="pages/page_虫部/page2/蜣螂.html"><img  src="images/虫部/25-蜣螂.jpg" title="蜣螂" id="I25" alt="蜣螂"></a>
+                <p>蜣螂</p>
+            </li>
+            <li id="天牛">
+                <a href="pages/page_虫部/page2/天牛.html"><img  src="images/虫部/26-天牛.jpg" title="天牛" id="I26" alt="天牛"></a>
+                <p>天牛</p>
+            </li>
+            <li id="蝼蛄">
+                <a href="pages/page_虫部/page2/蝼蛄.html"><img  src="images/虫部/27-蝼蛄.jpg" title="蝼蛄" id="I27" alt="蝼蛄"></a>
+                <p>蝼蛄</p>
+            </li>
+            <li id="萤火">
+                <a href="pages/page_虫部/page2/萤火.html"><img  src="images/虫部/28-萤火.jpg" title="萤火" id="I28" alt="萤火"></a>
+                <p>萤火</p>
+            </li>
+            <li id="衣鱼">
+                <a href="pages/page_虫部/page2/衣鱼.html"><img  src="images/虫部/29-衣鱼.jpg" title="衣鱼" id="I29" alt="衣鱼"></a>
+                <p>衣鱼</p>
+            </li>
+            <li id="鼠妇">
+                <a href="pages/page_虫部/page2/鼠妇.html"><img  src="images/虫部/30-鼠妇.jpg" title="鼠妇" id="I30" alt="鼠妇"></a>
+                <p>鼠妇</p>
+            </li>
+            <li id="蟅虫">
+                <a href="pages/page_虫部/page2/蔗虫.html"><img  src="images/虫部/31-蟅虫.jpg" title="蟅虫" id="I31" alt="蟅虫"></a>
+                <p>蟅虫</p>
+            </li>
+            <li id="蜚蠊">
+                <a href="pages/page_虫部/page2/蜚蠊.html"><img  src="images/虫部/32-蜚蠊.jpg" title="蜚蠊" id="I32" alt="蜚蠊"></a>
+                <p>蜚蠊</p>
+            </li>
+            <li id="蜚虻">
+                <a href="pages/page_虫部/page2/蜚虻.html"><img  src="images/虫部/33-蜚虻.jpg" title="蜚虻" id="I33" alt="蜚虻"></a>
+                <p>蜚虻</p>
+            </li>
+            <li id="蟾蜍">
+                <a href="pages/page_虫部/page2/蟾蜍.html"><img  src="images/虫部/34-蟾蜍.jpg" title="蟾蜍" id="I34" alt="蟾蜍"></a>
+                <p>蟾蜍</p>
+            </li>
+            <li id="蛤蟆">
+                <a href="pages/page_虫部/page2/蛤蟆.html"><img  src="images/虫部/35-蛤蟆.jpg" title="蛤蟆" id="I35" alt="蛤蟆"></a>
+                <p>蛤蟆</p>
+            </li>
+            <li id="蛙">
+                <a href="pages/page_虫部/page2/蛙.html"><img  src="images/虫部/36-蛙.jpg" title="蛙" id="I36" alt="蛙"></a>
+                <p>蛙</p>
+            </li>
+            <li id="蝌蚪">
+                <a href="pages/page_虫部/page2/蝌蚪.html"><img  src="images/虫部/37-蝌蚪.jpg" title="蝌蚪" id="I37" alt="蝌蚪"></a>
+                <p>蝌蚪</p>
+            </li>
+            <li id="蜈蚣">
+                <a href="pages/page_虫部/page2/蜈蚣.html"><img  src="images/虫部/38-蜈蚣.jpg" title="蜈蚣" id="I38" alt="蜈蚣"></a>
+                <p>蜈蚣</p>
+            </li>
+            <li id="蚯蚓">
+                <a href="pages/page_虫部/page2/蚯蚓.html"><img  src="images/虫部/39-蚯蚓.jpg" title="蚯蚓" id="I39" alt="蚯蚓"></a>
+                <p>蚯蚓</p>
+            </li>
+            <li id="蜗牛">
+                <a href="pages/page_虫部/page2/蜗牛.html"><img  src="images/虫部/40-蜗牛.jpg" title="蜗牛" id="I40" alt="蜗牛"></a>
+                <p>蜗牛</p>
+            </li>
+            <li id="蛞蝓">
+                <a href="pages/page_虫部/page3/蛞蝓.html"><img  src="images/虫部/41-蛞蝓.jpg" title="蛞蝓" id="I41" alt="蛞蝓"></a>
+                <p>蛞蝓</p>
+            </li>
+            <li id="蛔虫">
+                <a href="pages/page_虫部/page3/蛔虫.html"><img  src="images/虫部/42-蛔虫.jpg" title="蛔虫" id="I42" alt="蛔虫"></a>
+                <p>蛔虫</p>
+            </li>
+            <li id="胡麻">
+                <a href="pages/page_谷部/胡麻.html"><img  src="images/谷/1.jpg" title="胡麻" id="G1" alt="胡麻"></a>
+                <p>胡麻</p>
+            </li>
+            <li id="大麻">
+                <a href="pages/page_谷部/大麻.html"><img  src="images/谷/2.jpg" title=大麻" id="G2" alt="大麻"></a>
+                <p>大麻</p>
+            </li>
+            <li id="小麦">
+                <a href="pages/page_谷部/小麦.html"><img  src="images/谷/3.jpg" title="小麦" id="G3" alt="小麦"></a>
+                <p>小麦</p>
+            </li>
+            <li id="大麦">
+                <a href="pages/page_谷部/大麦.html"><img  src="images/谷/4.jpg" title="大麦" id="G4" alt="大麦"></a>
+                <p>大麦</p>
+            </li>
+            <li id="雀麦">
+                <a href="pages/page_谷部/雀麦.html"><img  src="images/谷/5.jpg" title="雀麦" id="G5" alt="雀麦"></a>
+                <p>雀麦</p>
+            </li>
+            <li id="荞麦">
+                <a href="pages/page_谷部/荞麦.html"><img  src="images/谷/6.jpg" title="荞麦" id="G6" alt="荞麦"></a>
+                <p>荞麦</p>
+            </li>
+            <li id="稻">
+                <a href="pages/page_谷部/稻.html"><img  src="images/谷/7.jpg" title="稻" id="G7" alt="稻"></a>
+                <p>稻</p>
+            </li>
+            <li id="粳">
+                <a href="pages/page_谷部/粳.html"><img  src="images/谷/8.jpg" title="粳" id="G8" alt="粳"></a>
+                <p>粳</p>
+            </li>
+            <li id="籼">
+                <a href="pages/page_谷部/籼.html"><img  src="images/谷/9.jpg" title="籼" id="G9" alt="籼"></a>
+                <p>籼</p>
+            </li>
+            <li id="稷">
+                <a href="pages/page_谷部/稷.html"><img  src="images/谷/10.jpg" title="稷" id="G10" alt="稷"></a>
+                <p>稷</p>
+            </li>
+            <li id="黍">
+                <a href="pages/page_谷部/黍.html"><img  src="images/谷/11.jpg" title="黍" id="G11" alt="黍"></a>
+                <p>黍</p>
+            </li>
+            <li id="蜀黍">
+                <a href="pages/page_谷部/蜀黍.html"><img  src="images/谷/12.jpg" title="蜀黍" id="G12" alt="蜀黍"></a>
+                <p>蜀黍</p>
+            </li>
+            <li id="玉蜀黍">
+                <a href="pages/page_谷部/玉蜀黍.html"><img  src="images/谷/13.jpg" title="玉蜀黍" id="G13" alt="玉蜀黍"></a>
+                <p>玉蜀黍</p>
+            </li>
+            <li id="粱">
+                <a href="pages/page_谷部/粱.html"><img  src="images/谷/14.jpg" title="粱" id="G14" alt="粱"></a>
+                <p>粱</p>
+            </li>
+            <li id="粟">
+                <a href="pages/page_谷部/粟.html"><img  src="images/谷/15.jpg" title="粟" id="G15" alt="粟"></a>
+                <p>粟</p>
+            </li>
+            <li id="参子">
+                <a href="pages/page_谷部/参子.html"><img  src="images/谷/16.jpg" title="参子" id="G16" alt="参子"></a>
+                <p>参子</p>
+            </li>
+            <li id="稗">
+                <a href="pages/page_谷部/稗.html"><img  src="images/谷/17.jpg" title="稗" id="G17" alt="稗"></a>
+                <p>稗</p>
+            </li>
+            <li id="薏苡仁">
+                <a href="pages/page_谷部/薏苡仁.html"><img  src="images/谷/18.jpg" title="薏苡仁" id="G18" alt="薏苡仁"></a>
+                <p>薏苡仁</p>
+            </li>
+            <li id="罂子粟">
+                <a href="pages/page_谷部/罂子粟.html"><img  src="images/谷/19.jpg" title="罂子粟" id="G19" alt="罂子粟"></a>
+                <p>罂子粟</p>
+            </li>
+            <li id="阿芙蓉">
+                <a href="pages/page_谷部/阿芙蓉.html"><img  src="images/谷/20.jpg" title="阿芙蓉" id="G20" alt="阿芙蓉"></a>
+                <p>阿芙蓉</p>
+            </li>
+            <li id="大豆">
+                <a href="pages/page_谷部/大豆.html"><img  src="images/谷/21.jpg" title="大豆" id="G21" alt="大豆"></a>
+                <p>大豆</p>
+            </li>
+            <li id="黄大豆">
+                <a href="pages/page_谷部/黄大豆.html"><img  src="images/谷/22.jpg" title="黄大豆" id="G22" alt="黄大豆"></a>
+                <p>黄大豆</p>
+            </li>
+            <li id="赤小豆">
+                <a href="pages/page_谷部/赤小豆.html"><img  src="images/谷/23.jpg" title="赤小豆" id="G23" alt="赤小豆"></a>
+                <p>赤小豆</p>
+            </li>
+            <li id="绿豆">
+                <a href="pages/page_谷部/绿豆.html"><img  src="images/谷/24.jpg" title="绿豆" id="G24" alt="绿豆"></a>
+                <p>绿豆</p>
+            </li>
+            <li id="豌豆">
+                <a href="pages/page_谷部/豌豆.html"><img  src="images/谷/25.jpg" title="豌豆" id="G25" alt="豌豆"></a>
+                <p>豌豆</p>
+            </li>
+            <li id="蚕豆">
+                <a href="pages/page_谷部/蚕豆.html"><img  src="images/谷/26.jpg" title="蚕豆" id="G26" alt="蚕豆"></a>
+                <p>蚕豆</p>
+            </li>
+            <li id="豇豆">
+                <a href="pages/page_谷部/豇豆.html"><img  src="images/谷/27.jpg" title="豇豆" id="G27" alt="豇豆"></a>
+                <p>豇豆</p>
+            </li>
+            <li id="扁豆">
+                <a href="pages/page_谷部/扁豆.html"><img  src="images/谷/28.jpg" title="扁豆" id="G28" alt="扁豆"></a>
+                <p>扁豆</p>
+            </li>
+            <li id="刀豆">
+                <a href="pages/page_谷部/刀豆.html"><img  src="images/谷/29.jpg" title="刀豆" id="G29" alt="刀豆"></a>
+                <p>刀豆</p>
+            </li>
+            <li id="大豆豉">
+                <a href="pages/page_谷部/大豆豉.html"><img  src="images/谷/30.jpg" title="大豆豉" id="G30" alt="大豆豉"></a>
+                <p>大豆豉</p>
+            </li>
+            <li id="豆腐">
+                <a href="pages/page_谷部/豆腐.html"><img  src="images/谷/31.jpg" title="豆腐" id="G31" alt="豆腐"></a>
+                <p>豆腐</p>
+            </li>
+            <li id="蒸饼">
+                <a href="pages/page_谷部/蒸饼.html"><img  src="images/谷/32.jpg" title="蒸饼" id="G32" alt="蒸饼"></a>
+                <p>蒸饼</p>
+            </li>
+            <li id="曲">
+                <a href="pages/page_谷部/曲.html"><img  src="images/谷/33.jpg" title="曲" id="G33" alt="曲"></a>
+                <p>曲</p>
+            </li>
+            <li id="神曲">
+                <a href="pages/page_谷部/神曲.html"><img  src="images/谷/34.jpg" title="神曲" id="G34" alt="神曲"></a>
+                <p>神曲</p>
+            </li>
+            <li id="红曲">
+                <a href="pages/page_谷部/红曲.html"><img  src="images/谷/35.jpg" title="红曲" id="G35" alt="红曲"></a>
+                <p>红曲</p>
+            </li>
+            <li id="蘖米">
+                <a href="pages/page_谷部/蘖米.html"><img  src="images/谷/36.jpg" title="蘖米" id="G36" alt="蘖米"></a>
+                <p>蘖米</p>
+            </li>
+            <li id="饴糖">
+                <a href="pages/page_谷部/饴糖.html"><img  src="images/谷/37.jpg" title="饴糖" id="G37" alt="饴糖"></a>
+                <p>饴糖</p>
+            </li>
+            <li id="酱">
+                <a href="pages/page_谷部/酱.html"><img  src="images/谷/38.jpg" title="酱" id="G38" alt="酱"></a>
+                <p>酱</p>
+            </li>
+            <li id="醋">
+                <a href="pages/page_谷部/醋.html"><img  src="images/谷/39.jpg" title="醋" id="G39" alt="醋"></a>
+                <p>醋</p>
+            </li>
+            <li id="酒">
+                <a href="pages/page_谷部/酒.html"><img  src="images/谷/40.jpg" title="酒" id="G40" alt="酒"></a>
+                <p>酒</p>
+            </li>
+            <li id="烧酒">
+                <a href="pages/page_谷部/烧酒.html"><img  src="images/谷/41.jpg" title="烧酒" id="G41" alt="烧酒"></a>
+                <p>烧酒</p>
+            </li>
+            <li id="糟">
+                <a href="pages/page_谷部/糟.html"><img  src="images/谷/42.jpg" title="糟" id="G42" alt="糟"></a>
+                <p>糟</p>
+            </li>
+            <li id="银">
+                <a href="pages/page_金石部/page1/银.html"><img  src="images/金石部/1-银.jpg" title="银" id="J1" alt="银"></a>
+                <p>银</p>
+            </li>
+            <li id="自然铜">
+                <a href="pages/page_金石部/page1/自然铜.html"><img  src="images/金石部/2-自然铜.jpg" title="自然铜" id="J2" alt="自然铜"></a>
+                <p>自然铜</p>
+            </li>
+            <li id="铜青">
+                <a href="pages/page_金石部/page1/铜青.html"><img  src="images/金石部/3-铜青.jpg" title="铜青" id="J3" alt="铜青"></a>
+                <p>铜青</p>
+            </li>
+            <li id="铅">
+                <a href="pages/page_金石部/page1/铅.html"><img  src="images/金石部/4-铅.jpg" title="铅" id="J4" alt="铅"></a>
+                <p>铅</p>
+            </li>
+            <li id="铅霜">
+                <a href="pages/page_金石部/page1/铅霜.html"><img  src="images/金石部/5-铅霜.jpg" title="铅霜" id="J5" alt="铅霜"></a>
+                <p>铅霜</p>
+            </li>
+            <li id="粉锡">
+                <a href="pages/page_金石部/page1/粉锡.html"><img  src="images/金石部/6-粉锡.jpg" title="粉锡" id="J6" alt="粉锡"></a>
+                <p>粉锡</p>
+            </li>
+            <li id="铅丹">
+                <a href="pages/page_金石部/page1/铅丹.html"><img  src="images/金石部/7-铅丹.jpg" title="铅丹" id="J7" alt="铅丹"></a>
+                <p>铅丹</p>
+            </li>
+            <li id="密陀僧">
+                <a href="pages/page_金石部/page1/密陀僧.html"><img  src="images/金石部/8-密陀僧.jpg" title="密陀僧" id="J8" alt="密陀僧"></a>
+                <p>密陀僧</p>
+            </li>
+            <li id="锡">
+                <a href="pages/page_金石部/page1/锡.html"><img  src="images/金石部/9-锡.jpg" title="锡" id="J9" alt="锡"></a>
+                <p>锡</p>
+            </li>
+            <li id="铁">
+                <a href="pages/page_金石部/page1/铁.html"><img  src="images/金石部/10-铁.jpg" title="铁" id="J10" alt="铁"></a>
+                <p>铁</p>
+            </li>
+            <li id="铁粉">
+                <a href="pages/page_金石部/page1/铁粉.html"><img  src="images/金石部/11-铁粉.jpg" title="铁粉" id="J11" alt="铁粉"></a>
+                <p>铁粉</p>
+            </li>
+            <li id="铁落">
+                <a href="pages/page_金石部/page1/铁落.html"><img  src="images/金石部/12-铁落.jpg" title="铁落" id="J12" alt="铁落"></a>
+                <p>铁落</p>
+            </li>
+            <li id="白石英">
+                <a href="pages/page_金石部/page1/白石英.html"><img  src="images/金石部/13-白石英.jpg" title="白石英" id="J13" alt="白石英"></a>
+                <p>白石英</p>
+            </li>
+            <li id="水银">
+                <a href="pages/page_金石部/page1/水银.html"><img  src="images/金石部/14-水银.jpg" title="水银" id="J14" alt="水银"></a>
+                <p>水银</p>
+            </li>
+            <li id="水银粉">
+                <a href="pages/page_金石部/page1/水银粉.html"><img  src="images/金石部/15-水银粉.jpg" title="水银粉" id="J15" alt="水银粉"></a>
+                <p>水银粉</p>
+            </li>
+            <li id="粉霜">
+                <a href="pages/page_金石部/page1/粉霜.html"><img  src="images/金石部/16-粉霜.jpg" title="粉霜" id="J16" alt="粉霜"></a>
+                <p>粉霜</p>
+            </li>
+            <li id="银朱">
+                <a href="pages/page_金石部/page1/银朱.html"><img  src="images/金石部/17-银朱.jpg" title="银朱" id="J17" alt="银朱"></a>
+                <p>银朱</p>
+            </li>
+            <li id="灵砂">
+                <a href="pages/page_金石部/page1/灵砂.html"><img  src="images/金石部/18-灵砂.jpg" title="灵砂" id="J18" alt="灵砂"></a>
+                <p>灵砂</p>
+            </li>
+            <li id="雄黄">
+                <a href="pages/page_金石部/page1/雄黄.html"><img  src="images/金石部/19-雄黄.jpg" title="雄黄" id="J19" alt="雄黄"></a>
+                <p>雄黄</p>
+            </li>
+            <li id="雌黄">
+                <a href="pages/page_金石部/page2/雌黄.html"><img  src="images/金石部/20-雌黄.jpg" title="雌黄" id="J20" alt="雌黄"></a>
+                <p>雌黄</p>
+            </li>
+            <li id="石膏">
+                <a href="pages/page_金石部/page2/石膏.html"><img  src="images/金石部/21-石膏.jpg" title="石膏" id="J21" alt="石膏"></a>
+                <p>石膏</p>
+            </li>
+            <li id="滑石">
+                <a href="pages/page_金石部/page2/滑石.html"><img  src="images/金石部/22-滑石.jpg" title="滑石" id="J22" alt="滑石"></a>
+                <p>滑石</p>
+            </li>
+            <li id="不灰木">
+                <a href="pages/page_金石部/page2/不灰木.html"><img  src="images/金石部/23-不灰木.jpg" title="不灰木" id="J23" alt="不灰木"></a>
+                <p>不灰木</p>
+            </li>
+            <li id="五色石脂">
+                <a href="pages/page_金石部/page2/五色石脂.html"><img  src="images/金石部/24-五色石脂.jpg" title="五色石脂" id="J24" alt="五色石脂"></a>
+                <p>五色石脂</p>
+            </li>
+            <li id="炉甘石">
+                <a href="pages/page_金石部/page2/炉甘石.html"><img  src="images/金石部/25-炉甘石.jpg" title="炉甘石" id="J25" alt="炉甘石"></a>
+                <p>炉甘石</p>
+            </li>
+            <li id="无名异">
+                <a href="pages/page_金石部/page2/无名异.html"><img  src="images/金石部/26-无名异.jpg" title="无名异" id="J26" alt="无名异"></a>
+                <p>无名异</p>
+            </li>
+            <li id="石钟乳">
+                <a href="pages/page_金石部/page2/石钟乳.html"><img  src="images/金石部/27-石钟乳.jpg" title="石钟乳" id="J27" alt="石钟乳"></a>
+                <p>石钟乳</p>
+            </li>
+            <li id="石脑油">
+                <a href="pages/page_金石部/page2/石脑油.html"><img  src="images/金石部/28-石脑油.jpg" title="石脑油" id="J28" alt="石脑油"></a>
+                <p>石脑油</p>
+            </li>
+            <li id="石炭">
+                <a href="pages/page_金石部/page2/石炭.html"><img  src="images/金石部/29-石炭.jpg" title="石炭" id="J29" alt="石炭"></a>
+                <p>石炭</p>
+            </li>
+            <li id="石灰">
+                <a href="pages/page_金石部/page2/石灰.html"><img  src="images/金石部/30-石灰.jpg" title="石灰" id="J30" alt="石灰"></a>
+                <p>石灰</p>
+            </li>
+            <li id="阳起石">
+                <a href="pages/page_金石部/page2/阳起石.html"><img  src="images/金石部/31-阳起石.jpg" title="阳起石" id="J31" alt="阳起石"></a>
+                <p>阳起石</p>
+            </li>
+            <li id="磁石">
+                <a href="pages/page_金石部/page2/慈石.html"><img  src="images/金石部/32-磁石.jpg" title="磁石" id="J32" alt="磁石"></a>
+                <p>磁石</p>
+            </li>
+            <li id="代赭石">
+                <a href="pages/page_金石部/page2/代赭石.html"><img  src="images/金石部/33-代赭石.jpg" title="代赭石" id="J33" alt="代赭石"></a>
+                <p>代赭石</p>
+            </li>
+            <li id="禹余粮">
+                <a href="pages/page_金石部/page2/禹余粮.html"><img  src="images/金石部/34-禹余粮.jpg" title="禹余粮" id="J34" alt="禹余粮"></a>
+                <p>禹余粮</p>
+            </li>
+            <li id="空青">
+                <a href="pages/page_金石部/page2/空青.html"><img  src="images/金石部/35-空青.jpg" title="空青" id="J35" alt="空青"></a>
+                <p>空青</p>
+            </li>
+            <li id="曾青">
+                <a href="pages/page_金石部/page2/曾青.html"><img  src="images/金石部/36-曾青.jpg" title="曾青" id="J36" alt="曾青"></a>
+                <p>曾青</p>
+            </li>
+            <li id="绿青">
+                <a href="pages/page_金石部/page2/绿青.html"><img  src="images/金石部/37-绿青.jpg" title="绿青" id="J37" alt="绿青"></a>
+                <p>绿青</p>
+            </li>
+            <li id="扁青">
+                <a href="pages/page_金石部/page2/扁青.html"><img  src="images/金石部/38-扁青.jpg" title="扁青" id="J38" alt="扁青"></a>
+                <p>扁青</p>
+            </li>
+            <li id="石胆">
+                <a href="pages/page_金石部/page2/石胆.html"><img  src="images/金石部/39-石胆.png" title="石胆" id="J39" alt="石胆"></a>
+                <p>石胆</p>
+            </li>
+            <li id="砒石">
+                <a href="pages/page_金石部/page3/砒石.html"><img  src="images/金石部/40-砒石.jpg" title="砒石" id="J40" alt="砒石"></a>
+                <p>砒石</p>
+            </li>
+            <li id="金星石">
+                <a href="pages/page_金石部/page3/金星石.html"><img  src="images/金石部/41-金星石.jpg" title="金星石" id="J41" alt="金星石"></a>
+                <p>金星石</p>
+            </li>
+            <li id="礞石">
+                <a href="pages/page_金石部/page3/礞石.html"><img  src="images/金石部/42-礞石.jpg" title="礞石" id="J42" alt="礞石"></a>
+                <p>礞石</p>
+            </li>
+            <li id="花乳石">
+                <a href="pages/page_金石部/page3/花乳石.html"><img  src="images/金石部/43-花乳石.jpg" title="花乳石" id="J43" alt="花乳石"></a>
+                <p>花乳石</p>
+            </li>
+            <li id="金牙石">
+                <a href="pages/page_金石部/page3/金牙石.html"><img  src="images/金石部/44-金牙石.jpg" title="金牙石" id="J44" alt="金牙石"></a>
+                <p>金牙石</p>
+            </li>
+            <li id="石燕">
+                <a href="pages/page_金石部/page3/石燕.html"><img  src="images/金石部/45-石燕.jpg" title="石燕" id="J45" alt="石燕"></a>
+                <p>石燕</p>
+            </li>
+            <li id="食盐">
+                <a href="pages/page_金石部/page3/食盐.html"><img  src="images/金石部/46-食盐.jpg" title="食盐" id="J46" alt="食盐"></a>
+                <p>食盐</p>
+            </li>
+            <li id="盐">
+                <a href="pages/page_金石部/page3/盐.html"><img  src="images/金石部/47-盐.jpg" title="盐" id="J47" alt="盐"></a>
+                <p>盐</p>
+            </li>
+            <li id="卤碱">
+                <a href="pages/page_金石部/page3/卤碱.html"><img  src="images/金石部/48-卤碱.jpg" title="卤碱" id="J48" alt="卤碱"></a>
+                <p>卤碱</p>
+            </li>
+            <li id="凝水石">
+                <a href="pages/page_金石部/page3/凝水石.html"><img  src="images/金石部/49-凝水石.jpg" title="凝水石" id="J49" alt="凝水石"></a>
+                <p>凝水石</p>
+            </li>
+            <li id="玄精石">
+                <a href="pages/page_金石部/page3/玄精石.html"><img  src="images/金石部/50-玄精石.jpg" title="玄精石" id="J50" alt="玄精石"></a>
+                <p>玄精石</p>
+            </li>
+            <li id="硭硝">
+                <a href="pages/page_金石部/page3/朴硝.html"><img  src="images/金石部/51-硭硝.jpg" title="硭硝" id="J51" alt="硭硝"></a>
+                <p>硭硝</p>
+            </li>
+            <li id="玄明粉">
+                <a href="pages/page_金石部/page3/玄明粉.html"><img  src="images/金石部/52-玄明粉.jpg" title="玄明粉" id="J52" alt="玄明粉"></a>
+                <p>玄明粉</p>
+            </li>
+            <li id="硝石">
+                <a href="pages/page_金石部/page3/硝石.html"><img  src="images/金石部/53-硝石.jpg" title="硝石" id="J53" alt="硝石"></a>
+                <p>硝石</p>
+            </li>
+            <li id="硇砂">
+                <a href="pages/page_金石部/page3/硇砂.html"><img  src="images/金石部/54-硇砂、.jpg" title="硇砂" id="J54" alt="硇砂"></a>
+                <p>硇砂</p>
+            </li>
+            <li id="蓬砂">
+                <a href="pages/page_金石部/page3/蓬砂.html"><img  src="images/金石部/55-蓬砂.jpg" title="蓬砂" id="J55" alt="蓬砂"></a>
+                <p>蓬砂</p>
+            </li>
+            <li id="石硫磺">
+                <a href="pages/page_金石部/page3/石硫磺.html"><img  src="images/金石部/56-石硫磺.jpg" title="石硫磺" id="J56" alt="石硫磺"></a>
+                <p>石硫磺</p>
+            </li>
+            <li id="石硫赤">
+                <a href="pages/page_金石部/page3/石硫赤.html"><img  src="images/金石部/57-石硫赤.jpg" title="石硫赤" id="J57" alt="石硫赤"></a>
+                <p>石硫赤</p>
+            </li>
+            <li id="矾石">
+                <a href="pages/page_金石部/page3/矾石.html"><img  src="images/金石部/58-矾石.jpg" title="矾石" id="J58" alt="矾石"></a>
+                <p>矾石</p>
+            </li>
+            <li id="绿矾">
+                <a href="pages/page_金石部/page3/绿矾.html"><img  src="images/金石部/59-绿矾.jpg" title="绿矾" id="J59" alt="绿矾"></a>
+                <p>绿矾</p>
+            </li>
+            <li id="黄矾">
+                <a href="pages/page_金石部/page4/黄矾.html"><img  src="images/金石部/60-黄矾.jpg" title="黄矾" id="J60" alt="黄矾"></a>
+                <p>黄矾</p>
+            </li>
+            <li id="龙">
+                <a href="pages/page_鳞部/page1/龙.html"><img  src="images/鳞/1.jpg" title="龙" id="L1" alt="龙"></a>
+                <p>龙</p>
+            </li>
+            <li id="吊">
+                <a href="pages/page_鳞部/page1/吊.html"><img  src="images/鳞/2.jpg" title="吊" id="L2" alt="吊"></a>
+                <p>吊</p>
+            </li>
+            <li id="鳄鱼">
+                <a href="pages/page_鳞部/page1/鳄鱼.html"><img  src="images/鳞/3.jpg" title="鳄鱼" id="L3" alt="鳄鱼"></a>
+                <p>鳄鱼</p>
+            </li>
+            <li id="鲮鲤">
+                <a href="pages/page_鳞部/page1/鲮鲤.html"><img  src="images/鳞/4.jpg" title="鲮鲤" id="L4" alt="鲮鲤"></a>
+                <p>鲮鲤</p>
+            </li>
+            <li id="石龙子">
+                <a href="pages/page_鳞部/page1/石龙子.html"><img  src="images/鳞/5.jpg" title="石龙子" id="L5" alt="石龙子"></a>
+                <p>石龙子</p>
+            </li>
+            <li id="守宫">
+                <a href="pages/page_鳞部/page1/守宫.html"><img  src="images/鳞/6.jpg" title="守宫" id="L6" alt="守宫"></a>
+                <p>守宫</p>
+            </li>
+            <li id="蛤蚧">
+                <a href="pages/page_鳞部/page1/蛤蚧.html"><img  src="images/鳞/7.jpg" title="蛤蚧" id="L7" alt="蛤蚧"></a>
+                <p>蛤蚧</p>
+            </li>
+            <li id="蛇蜕">
+                <a href="pages/page_鳞部/page1/蛇蜕.html"><img  src="images/鳞/8.jpg" title="蛇蜕" id="L8" alt="蛇蜕"></a>
+                <p>蛇蜕</p>
+            </li>
+            <li id="蚺蛇">
+                <a href="pages/page_鳞部/page1/蚺蛇.html"><img  src="images/鳞/9.jpg" title="蚺蛇" id="L9" alt="蚺蛇"></a>
+                <p>蚺蛇</p>
+            </li>
+            <li id="白花蛇">
+                <a href="pages/page_鳞部/page1/白花蛇.html"><img  src="images/鳞/10.jpg" title="白花蛇" id="L10" alt="白花蛇"></a>
+                <p>白花蛇</p>
+            </li>
+            <li id="乌蛇">
+                <a href="pages/page_鳞部/page1/乌蛇.html"><img  src="images/鳞/11.jpg" title="乌蛇" id="L11" alt="乌蛇"></a>
+                <p>乌蛇</p>
+            </li>
+            <li id="水蛇">
+                <a href="pages/page_鳞部/page1/水蛇.html"><img  src="images/鳞/12.jpg" title="水蛇" id="L12" alt="水蛇"></a>
+                <p>水蛇</p>
+            </li>
+            <li id="石首鱼">
+                <a href="pages/page_鳞部/page1/石首鱼.html"><img  src="images/鳞/13.jpg" title="石首鱼" id="L13" alt="石首鱼"></a>
+                <p>石首鱼</p>
+            </li>
+            <li id="鲥鱼">
+                <a href="pages/page_鳞部/page1/鲥鱼.html"><img  src="images/鳞/14.jpg" title="鲥鱼" id="L14" alt="鲥鱼"></a>
+                <p>鲥鱼</p>
+            </li>
+            <li id="鲫鱼">
+                <a href="pages/page_鳞部/page1/鲫鱼.html"><img  src="images/鳞/15.jpg" title="鲫鱼" id="L15" alt="鲫鱼"></a>
+                <p>鲫鱼</p>
+            </li>
+            <li id="鳜鱼">
+                <a href="pages/page_鳞部/page1/鳜鱼.html"><img  src="images/鳞/16.jpg" title="鳜鱼" id="L16" alt="鳜鱼"></a>
+                <p>鳜鱼</p>
+            </li>
+            <li id="金鱼">
+                <a href="pages/page_鳞部/page1/金鱼.html"><img  src="images/鳞/17.jpg" title="金鱼" id="L17" alt="金鱼"></a>
+                <p>金鱼</p>
+            </li>
+            <li id="鳢鱼">
+                <a href="pages/page_鳞部/page1/鳢鱼.html"><img  src="images/鳞/18.jpg" title="鳢鱼" id="L18" alt="鳢鱼"></a>
+                <p>鳢鱼</p>
+            </li>
+            <li id="鳗鲡鱼">
+                <a href="pages/page_鳞部/page1/鳗鲡鱼.html"><img  src="images/鳞/19.jpg" title="鳗鲡鱼" id="L19" alt="鳗鲡鱼"></a>
+                <p>鳗鲡鱼</p>
+            </li>
+            <li id="鳝鱼">
+                <a href="pages/page_鳞部/page1/鳝鱼.html"><img  src="images/鳞/20.jpg" title="鳝鱼" id="L20" alt="鳝鱼"></a>
+                <p>鳝鱼</p>
+            </li>
+            <li id="鳅鱼">
+                <a href="pages/page_鳞部/page2/鳅鱼.html"><img  src="images/鳞/21.jpg" title="鳅鱼" id="L21" alt="鳅鱼"></a>
+                <p>鳅鱼</p>
+            </li>
+            <li id="黄颡鱼">
+                <a href="pages/page_鳞部/page2/黄颡鱼.html"><img  src="images/鳞/22.jpg" title="黄颡鱼" id="L22" alt="黄颡鱼"></a>
+                <p>黄颡鱼</p>
+            </li>
+            <li id="乌贼鱼">
+                <a href="pages/page_鳞部/page2/乌贼鱼.html"><img  src="images/鳞/23.jpg" title="乌贼鱼" id="L23" alt="乌贼鱼"></a>
+                <p>乌贼鱼</p>
+            </li>
+            <li id="虾">
+                <a href="pages/page_鳞部/page2/虾.html"><img  src="images/鳞/24.jpg" title="虾" id="L24" alt="虾"></a>
+                <p>虾</p>
+            </li>
+            <li id="海马">
+                <a href="pages/page_鳞部/page2/海马.html"><img  src="images/鳞/25.jpg" title="海马" id="L25" alt="海马"></a>
+                <p>海马</p>
+            </li>
+            <li id="鳔">
+                <a href="pages/page_鳞部/page2/鳔.html"><img  src="images/鳞/26.jpg" title="鳔" id="L26" alt="鳔"></a>
+                <p>鳔</p>
+            </li>
+            <li id="鱼子">
+                <a href="pages/page_鳞部/page2/鱼子.html"><img  src="images/鳞/27.jfif" title="鱼子" id="L27" alt="鱼子"></a>
+                <p>鱼子</p>
+            </li>
+            <li id="鲤鱼">
+                <a href="pages/page_鳞部/page2/鲤鱼.html"><img  src="images/鳞/28.jpg" title="鲤鱼" id="L28" alt="鲤鱼"></a>
+                <p>鲤鱼</p>
+            </li>
+            <li id="青鱼">
+                <a href="pages/page_鳞部/page2/青鱼.html"><img  src="images/鳞/29.jpg" title="青鱼" id="L29" alt="青鱼"></a>
+                <p>青鱼</p>
+            </li>
+        </div>
+    </div>
+</div>
+
+<!--底部区域-->
+<div class="footer">
+    <h3>本网站内容均来自网络，不保证内容正确性，仅供交流参考，请遵循医嘱</h3>
+</div>
+</body>
+ </html>
